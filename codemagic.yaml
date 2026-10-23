@@ -1,0 +1,88 @@
+# Execução manual no Codemagic. Nenhuma credencial é armazenada no projeto.
+workflows:
+  ios-verificar:
+    name: iOS - compilar e testar sem assinatura
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      flutter: 3.47.7
+      xcode: latest
+      cocoapods: default
+    scripts:
+      - name: Dependências e análise Dart
+        script: |
+          set -euo pipefail
+          cd app
+          flutter pub get
+          flutter analyze
+      - name: Testes compartilhados
+        script: |
+          set -euo pipefail
+          cd packages/validation
+          flutter pub get
+          flutter test --reporter expanded
+      - name: Compilar para iPhone sem assinatura
+        script: |
+          set -euo pipefail
+          cd app
+          flutter build ios --release --no-codesign
+      - name: Testes nativos de gravação no simulador
+        script: |
+          set -euo pipefail
+          cd app
+          flutter build ios --simulator --debug
+          SIMULATOR_ID=$(xcrun simctl list devices available --json | python3 -c 'import json,sys; d=json.load(sys.stdin); print(next(v["udid"] for k,vs in d["devices"].items() if "iOS" in k for v in vs if "iPhone" in v["name"]))')
+          xcodebuild test -workspace ios/Runner.xcworkspace -scheme Runner \
+            -destination "platform=iOS Simulator,id=$SIMULATOR_ID" \
+            -resultBundlePath build/ios/OriginalPdfTests.xcresult \
+            CODE_SIGNING_ALLOWED=NO
+    artifacts:
+      - app/build/ios/iphoneos/*.app
+      - app/build/ios/*.xcresult
+      - /tmp/xcodebuild_logs/*.log
+
+  ios-testflight:
+    name: iOS - IPA assinado e envio ao TestFlight
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    # Criar integração com este nome no Codemagic antes de executar.
+    integrations:
+      app_store_connect: entrelinhas-apple
+    environment:
+      flutter: 3.47.7
+      xcode: latest
+      cocoapods: default
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: br.com.estudos.contextualPdfReader
+    scripts:
+      - name: Dependências e configuração iOS
+        script: |
+          set -euo pipefail
+          cd app
+          flutter pub get
+          flutter analyze
+          flutter build ios --release --config-only --no-codesign
+      - name: Testes compartilhados
+        script: |
+          set -euo pipefail
+          cd packages/validation
+          flutter pub get
+          flutter test --reporter expanded
+      - name: Assinar e gerar IPA
+        script: |
+          set -euo pipefail
+          cd app
+          xcode-project use-profiles
+          flutter build ipa --release \
+            --build-number="${BUILD_NUMBER}" \
+            --export-options-plist="$HOME/export_options.plist"
+    artifacts:
+      - app/build/ios/ipa/*.ipa
+      - app/build/ios/archive/*.xcarchive
+      - /tmp/xcodebuild_logs/*.log
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+        submit_to_app_store: false

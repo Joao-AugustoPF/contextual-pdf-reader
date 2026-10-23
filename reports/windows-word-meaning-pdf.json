@@ -1,0 +1,25 @@
+{
+  "meaning": "em cascata",
+  "nativeAnnotationRect": [
+    158.483986,
+    157.495999,
+    190.483986,
+    168.295999
+  ],
+  "inkBox": [
+    161.4839859008789,
+    160.49599914550782,
+    187.4839859008789,
+    165.29599914550784
+  ],
+  "wordBox": [
+    155.69198608398438,
+    149.39599609375,
+    193.27598571777344,
+    160.1959991455078
+  ],
+  "horizontalCenterDifferencePoints": 9.912108112075657e-08,
+  "directlyAboveWord": true,
+  "originalTextExtractable": true,
+  "pdfSha256": "52b02c3e277bca030e904a2b585f2c05d8c043b2a594b33133a66f38000b001d"
+}

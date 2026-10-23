@@ -1,0 +1,36 @@
+{
+  "legacyLabelBox": [
+    4,
+    762,
+    55.2,
+    774
+  ],
+  "migratedLabelBox": [
+    162.6839859008789,
+    160.49599914550782,
+    186.2839859008789,
+    165.29599914550784
+  ],
+  "targetBox": [
+    155.69198608398438,
+    149.39599609375,
+    193.27598571777344,
+    160.1959991455078
+  ],
+  "finalMeaning": "em cascata",
+  "finalLabelBox": [
+    161.4839859008789,
+    160.49599914550782,
+    187.4839859008789,
+    165.29599914550784
+  ],
+  "distanceFromWordTopPoints": 0.30000000000001137,
+  "horizontalCenterDifferencePoints": 0.0,
+  "directlyAboveWord": true,
+  "visibleRedPixels": 12,
+  "emptyMeaningRejected": true,
+  "originalPdfContainsMeaning": true,
+  "preservedOnReopen": true,
+  "modelsInstalledOrInvoked": false,
+  "personalDocumentsUsedForTest": false
+}

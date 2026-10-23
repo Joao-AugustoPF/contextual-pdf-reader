@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.ico binary
+*.jar binary
+*.ttf binary
+PROMPT_CODEX_LEITOR_PDF_OFFLINE_AB_MINILM.md whitespace=-blank-at-eol

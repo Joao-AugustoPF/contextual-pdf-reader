@@ -1,0 +1,42 @@
+{
+  "platform": "windows",
+  "mode": "compare",
+  "selectedWord": "programming",
+  "machineSuggestion": "programação",
+  "finalTranslation": "programação revisada",
+  "savedBeforeReview": false,
+  "cancelPreservedEmptyAnnotations": true,
+  "directSuggestionAppliedWithoutDialog": true,
+  "manualOverride": true,
+  "suggestionEvidence": {
+    "basis": "contextual-prefix-alignment",
+    "original": "programming",
+    "translation": "programação",
+    "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+    "elapsedMs": 339.398,
+    "contextVerified": false,
+    "alignmentResolved": true,
+    "alignmentEvidence": {
+      "method": "prefix",
+      "withoutTargetTranslation": "Eu decidi desistir.",
+      "withTargetTranslation": "Eu decidi desistir da programação.",
+      "sentenceTranslatedSpan": [
+        19,
+        30
+      ]
+    },
+    "requiresReview": false,
+    "userReviewed": true
+  },
+  "runtimeStatus": {
+    "translatorReady": true,
+    "minilmReady": true,
+    "encoderCalls": 2,
+    "translationCalls": 5,
+    "onnxImported": true,
+    "rssBytes": 230174720,
+    "peakWorkingSetBytes": 230367232,
+    "elapsedMs": 0.3491000024951063
+  },
+  "userDatabaseUsed": false
+}

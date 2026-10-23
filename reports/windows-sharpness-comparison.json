@@ -1,0 +1,24 @@
+{
+  "roi": [
+    393,
+    440,
+    750,
+    464
+  ],
+  "zoom": 2.0127388535031847,
+  "metrics": {
+    "before": {
+      "edgeEnergy": 6515.508304836346,
+      "darkPixels": 765,
+      "midGrayPixels": 1089
+    },
+    "after": {
+      "edgeEnergy": 9639.874572545188,
+      "darkPixels": 951,
+      "midGrayPixels": 704
+    }
+  },
+  "edgeEnergyIncreasePercent": 47.952763184872026,
+  "progressiveBlurReproducedBeforeFix": false,
+  "scope": "Um trecho sintético em Times-Italic, Windows, mesmo zoom/viewport; não substitui inspeção do livro/monitor do usuário."
+}

@@ -1,0 +1,15 @@
+name: reader_validation
+publish_to: none
+environment:
+  sdk: '>=3.13.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  drift: 2.35.2
+  sqlite3: 3.5.2
+  pdf_document: 10.0.0
+  crypto: ^3.0.6
+  archive: ^4.5.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

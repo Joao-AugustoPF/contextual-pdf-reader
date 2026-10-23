@@ -1,0 +1,76 @@
+{
+  "timestampUtc": "2026-10-23T16:55:01.632987+00:00",
+  "scope": "sugestoes isoladas do tradutor real, sem validacao de sentido contextual e fora das metricas A/B",
+  "samples": [
+    {
+      "original": "rippling",
+      "result": {
+        "text": "Ondulação",
+        "cold": true,
+        "loadMs": 485.30290000053355,
+        "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+        "elapsedMs": 513.9730999944732
+      },
+      "contextVerified": false,
+      "requiresReview": true
+    },
+    {
+      "original": "coupled",
+      "result": {
+        "text": "Acoplada.",
+        "cold": false,
+        "loadMs": 0,
+        "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+        "elapsedMs": 20.1664999985951
+      },
+      "contextVerified": false,
+      "requiresReview": true
+    },
+    {
+      "original": "axioms",
+      "result": {
+        "text": "Axiomas",
+        "cold": false,
+        "loadMs": 0,
+        "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+        "elapsedMs": 36.62380000605481
+      },
+      "contextVerified": false,
+      "requiresReview": true
+    },
+    {
+      "original": "equilibrium",
+      "result": {
+        "text": "equilíbrio",
+        "cold": false,
+        "loadMs": 0,
+        "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+        "elapsedMs": 23.419999997713603
+      },
+      "contextVerified": false,
+      "requiresReview": true
+    },
+    {
+      "original": "unpredictable",
+      "result": {
+        "text": "Imprevisível.",
+        "cold": false,
+        "loadMs": 0,
+        "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+        "elapsedMs": 26.317500000004657
+      },
+      "contextVerified": false,
+      "requiresReview": true
+    }
+  ],
+  "status": {
+    "translatorReady": true,
+    "minilmReady": true,
+    "encoderCalls": 0,
+    "translationCalls": 5,
+    "onnxImported": false,
+    "rssBytes": 147632128,
+    "peakWorkingSetBytes": 176214016,
+    "elapsedMs": 13.682500000868458
+  }
+}

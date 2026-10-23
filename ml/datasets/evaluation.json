@@ -1,0 +1,1087 @@
+[
+  {
+    "id": "phrasal_verb-001",
+    "sentence": "I decided to give up programming.",
+    "selectedText": "give",
+    "start": 13,
+    "end": 17,
+    "expectedExpression": "give up",
+    "expectedSense": "stop",
+    "acceptableTranslationsPtBr": [
+      "desistir",
+      "abandonar"
+    ],
+    "category": "phrasal_verb",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-002",
+    "sentence": "Turn on the light.",
+    "selectedText": "light",
+    "start": 12,
+    "end": 17,
+    "expectedExpression": "light",
+    "expectedSense": "illumination",
+    "acceptableTranslationsPtBr": [
+      "luz"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-003",
+    "sentence": "This framework is light and fast.",
+    "selectedText": "light",
+    "start": 18,
+    "end": 23,
+    "expectedExpression": "light",
+    "expectedSense": "lightweight",
+    "acceptableTranslationsPtBr": [
+      "leve",
+      "leve em recursos"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-004",
+    "sentence": "She deposited cash at the bank.",
+    "selectedText": "bank",
+    "start": 26,
+    "end": 30,
+    "expectedExpression": "bank",
+    "expectedSense": "financial",
+    "acceptableTranslationsPtBr": [
+      "banco"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-005",
+    "sentence": "The fisherman sat on the river bank.",
+    "selectedText": "bank",
+    "start": 31,
+    "end": 35,
+    "expectedExpression": "bank",
+    "expectedSense": "river_edge",
+    "acceptableTranslationsPtBr": [
+      "margem",
+      "beira"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-006",
+    "sentence": "There is no extra charge for delivery.",
+    "selectedText": "charge",
+    "start": 18,
+    "end": 24,
+    "expectedExpression": "charge",
+    "expectedSense": "fee",
+    "acceptableTranslationsPtBr": [
+      "taxa",
+      "cobrança"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-007",
+    "sentence": "The phone needs a charge.",
+    "selectedText": "charge",
+    "start": 18,
+    "end": 24,
+    "expectedExpression": "charge",
+    "expectedSense": "electricity",
+    "acceptableTranslationsPtBr": [
+      "carga",
+      "carregar"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-008",
+    "sentence": "The prosecutor filed a charge of fraud.",
+    "selectedText": "charge",
+    "start": 23,
+    "end": 29,
+    "expectedExpression": "charge",
+    "expectedSense": "accusation",
+    "acceptableTranslationsPtBr": [
+      "acusação"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-009",
+    "sentence": "We run automated tests every morning.",
+    "selectedText": "run",
+    "start": 3,
+    "end": 6,
+    "expectedExpression": "run",
+    "expectedSense": "execute",
+    "acceptableTranslationsPtBr": [
+      "executar",
+      "rodar"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-010",
+    "sentence": "I run five miles before breakfast.",
+    "selectedText": "run",
+    "start": 2,
+    "end": 5,
+    "expectedExpression": "run",
+    "expectedSense": "jog",
+    "acceptableTranslationsPtBr": [
+      "correr",
+      "corro"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "phrasal_verb-011",
+    "sentence": "She will never give in to threats.",
+    "selectedText": "give",
+    "start": 15,
+    "end": 19,
+    "expectedExpression": "give in",
+    "expectedSense": "yield",
+    "acceptableTranslationsPtBr": [
+      "ceder"
+    ],
+    "category": "phrasal_verb",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "phrasal_verb-012",
+    "sentence": "We plan to give away these books.",
+    "selectedText": "give",
+    "start": 11,
+    "end": 15,
+    "expectedExpression": "give away",
+    "expectedSense": "donate",
+    "acceptableTranslationsPtBr": [
+      "doar",
+      "dar",
+      "distribuir"
+    ],
+    "category": "phrasal_verb",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "phrasal_verb-013",
+    "sentence": "Please look up this word in a dictionary.",
+    "selectedText": "look",
+    "start": 7,
+    "end": 11,
+    "expectedExpression": "look up",
+    "expectedSense": "search",
+    "acceptableTranslationsPtBr": [
+      "consultar",
+      "pesquisar",
+      "procurar"
+    ],
+    "category": "phrasal_verb",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "phrasal_verb-014",
+    "sentence": "Can you look after my cat tomorrow?",
+    "selectedText": "look",
+    "start": 8,
+    "end": 12,
+    "expectedExpression": "look after",
+    "expectedSense": "care",
+    "acceptableTranslationsPtBr": [
+      "cuidar",
+      "cuidar de"
+    ],
+    "category": "phrasal_verb",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "phrasal_verb-015",
+    "sentence": "They may turn down the job offer.",
+    "selectedText": "turn",
+    "start": 9,
+    "end": 13,
+    "expectedExpression": "turn down",
+    "expectedSense": "reject",
+    "acceptableTranslationsPtBr": [
+      "recusar",
+      "rejeitar"
+    ],
+    "category": "phrasal_verb",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "phrasal_verb-016",
+    "sentence": "Please turn down the music.",
+    "selectedText": "turn",
+    "start": 7,
+    "end": 11,
+    "expectedExpression": "turn down",
+    "expectedSense": "reduce",
+    "acceptableTranslationsPtBr": [
+      "abaixar",
+      "diminuir",
+      "reduzir"
+    ],
+    "category": "phrasal_verb",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "phrasal_verb-017",
+    "sentence": "Let us set up the development environment.",
+    "selectedText": "set",
+    "start": 7,
+    "end": 10,
+    "expectedExpression": "set up",
+    "expectedSense": "establish",
+    "acceptableTranslationsPtBr": [
+      "configurar",
+      "montar",
+      "criar"
+    ],
+    "category": "phrasal_verb",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "phrasal_verb-018",
+    "sentence": "You should carry on with your studies.",
+    "selectedText": "carry",
+    "start": 11,
+    "end": 16,
+    "expectedExpression": "carry on",
+    "expectedSense": "continue",
+    "acceptableTranslationsPtBr": [
+      "continuar",
+      "prosseguir"
+    ],
+    "category": "phrasal_verb",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "phrasal_verb-019",
+    "sentence": "I often run into my teacher downtown.",
+    "selectedText": "run",
+    "start": 8,
+    "end": 11,
+    "expectedExpression": "run into",
+    "expectedSense": "encounter",
+    "acceptableTranslationsPtBr": [
+      "encontrar",
+      "encontro",
+      "esbarrar"
+    ],
+    "category": "phrasal_verb",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-020",
+    "sentence": "Each thread has its own stack.",
+    "selectedText": "thread",
+    "start": 5,
+    "end": 11,
+    "expectedExpression": "thread",
+    "expectedSense": "computing",
+    "acceptableTranslationsPtBr": [
+      "thread",
+      "linha de execução"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-021",
+    "sentence": "The red thread broke while sewing.",
+    "selectedText": "thread",
+    "start": 8,
+    "end": 14,
+    "expectedExpression": "thread",
+    "expectedSense": "fiber",
+    "acceptableTranslationsPtBr": [
+      "fio",
+      "linha"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-022",
+    "sentence": "Choose a web framework for this app.",
+    "selectedText": "framework",
+    "start": 13,
+    "end": 22,
+    "expectedExpression": "framework",
+    "expectedSense": "software",
+    "acceptableTranslationsPtBr": [
+      "framework",
+      "estrutura"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-023",
+    "sentence": "The building has a wooden framework.",
+    "selectedText": "framework",
+    "start": 26,
+    "end": 35,
+    "expectedExpression": "framework",
+    "expectedSense": "structure",
+    "acceptableTranslationsPtBr": [
+      "estrutura",
+      "arcabouço"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-024",
+    "sentence": "A race condition corrupted the counter.",
+    "selectedText": "race condition",
+    "start": 2,
+    "end": 16,
+    "expectedExpression": "race condition",
+    "expectedSense": "concurrency",
+    "acceptableTranslationsPtBr": [
+      "condição de corrida",
+      "condição de disputa"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-025",
+    "sentence": "Use a lock to protect the shared resource.",
+    "selectedText": "lock",
+    "start": 6,
+    "end": 10,
+    "expectedExpression": "lock",
+    "expectedSense": "mutex",
+    "acceptableTranslationsPtBr": [
+      "bloqueio",
+      "trava",
+      "mutex"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-026",
+    "sentence": "The door lock is broken.",
+    "selectedText": "lock",
+    "start": 9,
+    "end": 13,
+    "expectedExpression": "lock",
+    "expectedSense": "door",
+    "acceptableTranslationsPtBr": [
+      "fechadura",
+      "tranca"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-027",
+    "sentence": "We will deploy the service tonight.",
+    "selectedText": "deploy",
+    "start": 8,
+    "end": 14,
+    "expectedExpression": "deploy",
+    "expectedSense": "publish",
+    "acceptableTranslationsPtBr": [
+      "implantar",
+      "publicar",
+      "implementar"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-028",
+    "sentence": "The latest build passed all checks.",
+    "selectedText": "build",
+    "start": 11,
+    "end": 16,
+    "expectedExpression": "build",
+    "expectedSense": "software",
+    "acceptableTranslationsPtBr": [
+      "compilação",
+      "construção"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-029",
+    "sentence": "They will build a bridge over the river.",
+    "selectedText": "build",
+    "start": 10,
+    "end": 15,
+    "expectedExpression": "build",
+    "expectedSense": "construct",
+    "acceptableTranslationsPtBr": [
+      "construir"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-030",
+    "sentence": "Create a new branch before editing code.",
+    "selectedText": "branch",
+    "start": 13,
+    "end": 19,
+    "expectedExpression": "branch",
+    "expectedSense": "git",
+    "acceptableTranslationsPtBr": [
+      "ramificação",
+      "branch",
+      "ramo"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-031",
+    "sentence": "The falling branch damaged the car.",
+    "selectedText": "branch",
+    "start": 12,
+    "end": 18,
+    "expectedExpression": "branch",
+    "expectedSense": "tree",
+    "acceptableTranslationsPtBr": [
+      "galho",
+      "ramo"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-032",
+    "sentence": "The next release fixes this bug.",
+    "selectedText": "release",
+    "start": 9,
+    "end": 16,
+    "expectedExpression": "release",
+    "expectedSense": "version",
+    "acceptableTranslationsPtBr": [
+      "versão",
+      "lançamento"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-033",
+    "sentence": "They will release the prisoner tomorrow.",
+    "selectedText": "release",
+    "start": 10,
+    "end": 17,
+    "expectedExpression": "release",
+    "expectedSense": "free",
+    "acceptableTranslationsPtBr": [
+      "libertar",
+      "soltar"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-034",
+    "sentence": "Save the current state before closing.",
+    "selectedText": "state",
+    "start": 17,
+    "end": 22,
+    "expectedExpression": "state",
+    "expectedSense": "condition",
+    "acceptableTranslationsPtBr": [
+      "estado"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-035",
+    "sentence": "Texas is a southern state.",
+    "selectedText": "state",
+    "start": 20,
+    "end": 25,
+    "expectedExpression": "state",
+    "expectedSense": "territory",
+    "acceptableTranslationsPtBr": [
+      "estado"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "idiom-036",
+    "sentence": "The values are calculated on the fly.",
+    "selectedText": "on the fly",
+    "start": 26,
+    "end": 36,
+    "expectedExpression": "on the fly",
+    "expectedSense": "dynamic",
+    "acceptableTranslationsPtBr": [
+      "dinamicamente",
+      "em tempo real",
+      "na hora"
+    ],
+    "category": "idiom",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "idiom-037",
+    "sentence": "The software works out of the box.",
+    "selectedText": "out of the box",
+    "start": 19,
+    "end": 33,
+    "expectedExpression": "out of the box",
+    "expectedSense": "ready",
+    "acceptableTranslationsPtBr": [
+      "pronto para uso",
+      "por padrão",
+      "de fábrica"
+    ],
+    "category": "idiom",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "idiom-038",
+    "sentence": "Several jobs are at stake.",
+    "selectedText": "at stake",
+    "start": 17,
+    "end": 25,
+    "expectedExpression": "at stake",
+    "expectedSense": "risk",
+    "acceptableTranslationsPtBr": [
+      "em jogo",
+      "em risco"
+    ],
+    "category": "idiom",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "idiom-039",
+    "sentence": "By and large, customers like the update.",
+    "selectedText": "By and large",
+    "start": 0,
+    "end": 12,
+    "expectedExpression": "by and large",
+    "expectedSense": "generally",
+    "acceptableTranslationsPtBr": [
+      "em geral",
+      "de modo geral"
+    ],
+    "category": "idiom",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "idiom-040",
+    "sentence": "He criticized the laissez-faire approach.",
+    "selectedText": "laissez-faire",
+    "start": 18,
+    "end": 31,
+    "expectedExpression": "laissez-faire",
+    "expectedSense": "nonintervention",
+    "acceptableTranslationsPtBr": [
+      "laissez-faire",
+      "não intervenção"
+    ],
+    "category": "idiom",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "inflection-041",
+    "sentence": "She gave up smoking last year.",
+    "selectedText": "gave",
+    "start": 4,
+    "end": 8,
+    "expectedExpression": "give up",
+    "expectedSense": "stop",
+    "acceptableTranslationsPtBr": [
+      "desistiu",
+      "abandonou",
+      "desistir"
+    ],
+    "category": "inflection",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "inflection-042",
+    "sentence": "He looks after his younger brother.",
+    "selectedText": "looks",
+    "start": 3,
+    "end": 8,
+    "expectedExpression": "look after",
+    "expectedSense": "care",
+    "acceptableTranslationsPtBr": [
+      "cuida",
+      "cuidar",
+      "cuidar de"
+    ],
+    "category": "inflection",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "inflection-043",
+    "sentence": "We set the new router up yesterday.",
+    "selectedText": "set",
+    "start": 3,
+    "end": 6,
+    "expectedExpression": "set up",
+    "expectedSense": "establish",
+    "acceptableTranslationsPtBr": [
+      "configuramos",
+      "configurar",
+      "montar"
+    ],
+    "category": "inflection",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "inflection-044",
+    "sentence": "She looked the number up online.",
+    "selectedText": "looked",
+    "start": 4,
+    "end": 10,
+    "expectedExpression": "look up",
+    "expectedSense": "search",
+    "acceptableTranslationsPtBr": [
+      "consultou",
+      "pesquisou",
+      "procurou",
+      "consultar"
+    ],
+    "category": "inflection",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "inflection-045",
+    "sentence": "They gave the old furniture away.",
+    "selectedText": "gave",
+    "start": 5,
+    "end": 9,
+    "expectedExpression": "give away",
+    "expectedSense": "donate",
+    "acceptableTranslationsPtBr": [
+      "doaram",
+      "doar",
+      "dar"
+    ],
+    "category": "inflection",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "negation-046",
+    "sentence": "Do not give up now.",
+    "selectedText": "give",
+    "start": 7,
+    "end": 11,
+    "expectedExpression": "give up",
+    "expectedSense": "stop",
+    "acceptableTranslationsPtBr": [
+      "desistir",
+      "desista",
+      "abandonar"
+    ],
+    "category": "negation",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "negation-047",
+    "sentence": "We did not run the program.",
+    "selectedText": "run",
+    "start": 11,
+    "end": 14,
+    "expectedExpression": "run",
+    "expectedSense": "execute",
+    "acceptableTranslationsPtBr": [
+      "executar",
+      "rodar",
+      "executamos"
+    ],
+    "category": "negation",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "punctuation-048",
+    "sentence": "Mr. Smith said, \"Give up the chase.\"",
+    "selectedText": "Give",
+    "start": 17,
+    "end": 21,
+    "expectedExpression": "give up",
+    "expectedSense": "stop",
+    "acceptableTranslationsPtBr": [
+      "desistir",
+      "abandonar",
+      "desista"
+    ],
+    "category": "punctuation",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "punctuation-049",
+    "sentence": "The tool, e.g. a framework, can help.",
+    "selectedText": "framework",
+    "start": 17,
+    "end": 26,
+    "expectedExpression": "framework",
+    "expectedSense": "software",
+    "acceptableTranslationsPtBr": [
+      "framework",
+      "estrutura"
+    ],
+    "category": "punctuation",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "punctuation-050",
+    "sentence": "Please give\nup this dangerous habit.",
+    "selectedText": "give",
+    "start": 7,
+    "end": 11,
+    "expectedExpression": "give up",
+    "expectedSense": "stop",
+    "acceptableTranslationsPtBr": [
+      "desistir",
+      "abandonar"
+    ],
+    "category": "punctuation",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-051",
+    "sentence": "This suitcase is surprisingly light.",
+    "selectedText": "light",
+    "start": 30,
+    "end": 35,
+    "expectedExpression": "light",
+    "expectedSense": "lightweight",
+    "acceptableTranslationsPtBr": [
+      "leve"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-052",
+    "sentence": "Sunlight is a natural source of light.",
+    "selectedText": "light",
+    "start": 32,
+    "end": 37,
+    "expectedExpression": "light",
+    "expectedSense": "illumination",
+    "acceptableTranslationsPtBr": [
+      "luz"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-053",
+    "sentence": "The bank refused the loan.",
+    "selectedText": "bank",
+    "start": 4,
+    "end": 8,
+    "expectedExpression": "bank",
+    "expectedSense": "financial",
+    "acceptableTranslationsPtBr": [
+      "banco"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-054",
+    "sentence": "Willows grow along the bank of the river.",
+    "selectedText": "bank",
+    "start": 23,
+    "end": 27,
+    "expectedExpression": "bank",
+    "expectedSense": "river_edge",
+    "acceptableTranslationsPtBr": [
+      "margem",
+      "beira"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-055",
+    "sentence": "A bat sleeps upside down.",
+    "selectedText": "bat",
+    "start": 2,
+    "end": 5,
+    "expectedExpression": "bat",
+    "expectedSense": "animal",
+    "acceptableTranslationsPtBr": [
+      "morcego"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "polysemy-056",
+    "sentence": "He hit the ball with a bat.",
+    "selectedText": "bat",
+    "start": 23,
+    "end": 26,
+    "expectedExpression": "bat",
+    "expectedSense": "sport",
+    "acceptableTranslationsPtBr": [
+      "taco"
+    ],
+    "category": "polysemy",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "phrasal_verb-057",
+    "sentence": "Please give the ticket to the driver.",
+    "selectedText": "give",
+    "start": 7,
+    "end": 11,
+    "expectedExpression": "give",
+    "expectedSense": "handover",
+    "acceptableTranslationsPtBr": [
+      "dar",
+      "entregar",
+      "dê"
+    ],
+    "category": "phrasal_verb",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-058",
+    "sentence": "We can set up a local database.",
+    "selectedText": "set up",
+    "start": 7,
+    "end": 13,
+    "expectedExpression": "set up",
+    "expectedSense": "establish",
+    "acceptableTranslationsPtBr": [
+      "configurar",
+      "montar",
+      "criar"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "technical-059",
+    "sentence": "The race condition disappears with synchronization.",
+    "selectedText": "race condition",
+    "start": 4,
+    "end": 18,
+    "expectedExpression": "race condition",
+    "expectedSense": "concurrency",
+    "acceptableTranslationsPtBr": [
+      "condição de corrida",
+      "condição de disputa"
+    ],
+    "category": "technical",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "idiom-060",
+    "sentence": "Their safety is at stake here.",
+    "selectedText": "at stake",
+    "start": 16,
+    "end": 24,
+    "expectedExpression": "at stake",
+    "expectedSense": "risk",
+    "acceptableTranslationsPtBr": [
+      "em jogo",
+      "em risco"
+    ],
+    "category": "idiom",
+    "expectedAbstention": false,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "abstain-061",
+    "sentence": "The word bank has several meanings.",
+    "selectedText": "bank",
+    "start": 9,
+    "end": 13,
+    "expectedExpression": "bank",
+    "expectedSense": null,
+    "acceptableTranslationsPtBr": [],
+    "category": "abstain",
+    "expectedAbstention": true,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "abstain-062",
+    "sentence": "The invented word florptastic is unclear.",
+    "selectedText": "florptastic",
+    "start": 18,
+    "end": 29,
+    "expectedExpression": "florptastic",
+    "expectedSense": null,
+    "acceptableTranslationsPtBr": [],
+    "category": "abstain",
+    "expectedAbstention": true,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "abstain-063",
+    "sentence": "He said charge without any context.",
+    "selectedText": "charge",
+    "start": 8,
+    "end": 14,
+    "expectedExpression": "charge",
+    "expectedSense": null,
+    "acceptableTranslationsPtBr": [],
+    "category": "abstain",
+    "expectedAbstention": true,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  },
+  {
+    "id": "abstain-064",
+    "sentence": "Translate the isolated token light.",
+    "selectedText": "light",
+    "start": 29,
+    "end": 34,
+    "expectedExpression": "light",
+    "expectedSense": null,
+    "acceptableTranslationsPtBr": [],
+    "category": "abstain",
+    "expectedAbstention": true,
+    "provenance": "agent-authored-explicit-unvalidated",
+    "split": "test"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "annotations": 2,
+  "last": {
+    "id": "1792763798750581",
+    "documentId": "a38b8d3938dbedff2a036c0b5383a9dcba54085a1129d7e6e6427fdc4646ee42",
+    "pageNumber": 1,
+    "charRange": [
+      132,
+      137
+    ],
+    "quadPointsPdf": [
+      [
+        124.42599487304688,
+        660.9340209960938,
+        148.8699951171875,
+        674.052001953125
+      ]
+    ],
+    "selectedText": "light",
+    "detectedExpression": "light",
+    "shortTranslation": "luz",
+    "originalSentence": "Turn on the light.",
+    "translatedSentence": "Ligue a luz.",
+    "type": "translation",
+    "color": 4294956367,
+    "mode": "A",
+    "engineId": "google-mlkit-en-pt-sdk-0.15.1",
+    "modelVersion": null,
+    "manualOverride": false,
+    "source": "automática",
+    "labelBox": [
+      124.42599487304688,
+      675.052001953125,
+      156.42599487304688,
+      687.052001953125
+    ],
+    "labelFontSize": 8.0,
+    "marginNote": false,
+    "extractionVersion": "pdfrx-2.10.0",
+    "createdAt": "2026-10-23T13:56:38.750530",
+    "updatedAt": "2026-10-23T13:56:38.750530",
+    "decision": {
+      "mode": "A",
+      "status": "Correspondência lexical",
+      "shortTranslation": "luz",
+      "senseId": "illumination",
+      "semanticScore": null,
+      "confidence": null,
+      "meaningResolved": true,
+      "alignmentResolved": true,
+      "alignmentEvidence": [
+        "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+      ],
+      "decisionMs": 0.269,
+      "ranking": []
+    }
+  },
+  "success": true
+}

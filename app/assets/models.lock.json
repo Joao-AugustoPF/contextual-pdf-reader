@@ -1,0 +1,84 @@
+{
+  "minilm": {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "license": "Apache-2.0",
+    "quantization": "dynamic QUInt8 AVX2, upstream export",
+    "dimensions": 384,
+    "parameters": 22713216,
+    "pooling": "target token hidden states; experimental WSD"
+  },
+  "translator": {
+    "id": "Argos translate-en_pb",
+    "version": "1.9",
+    "source": "argosopentech/argospm-index",
+    "license": "CC-BY-4.0",
+    "attribution": "Jorg Tiedemann and Santhosh Thottingal (2020), OPUS-MT"
+  },
+  "files": [
+    {
+      "file": "models/minilm/model.onnx",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/onnx/model_quint8_avx2.onnx",
+      "bytes": 23046789,
+      "sha256": "b941bf19f1f1283680f449fa6a7336bb5600bdcd5f84d10ddc5cd72218a0fd21"
+    },
+    {
+      "file": "models/minilm/tokenizer.json",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer.json",
+      "bytes": 466247,
+      "sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037"
+    },
+    {
+      "file": "models/minilm/vocab.txt",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/vocab.txt",
+      "bytes": 231508,
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    {
+      "file": "models/translate-en_pb-1_9.argosmodel",
+      "url": "https://argos-net.com/v1/translate-en_pb-1_9.argosmodel",
+      "bytes": 66179201,
+      "sha256": "1d1cd5e9540c6b38c258bed002a42d3b311b8a189acb74feaa311ef30d175c5b"
+    },
+    {
+      "file": "models/translator/metadata.json",
+      "bytes": 145,
+      "sha256": "e7cead9e4aa6407d26694b5366a3099a28e51c6b272ee9bec42a744843d1046c"
+    },
+    {
+      "file": "models/translator/model/config.json",
+      "bytes": 248,
+      "sha256": "dc89d40131f6b004c98d284411104429ddc08a098f1786380ef1f118d78ed51c"
+    },
+    {
+      "file": "models/translator/model/model.bin",
+      "bytes": 80298997,
+      "sha256": "a68dd89c9d226e09cef948a01ded22bede8858326af89644f1b715efe39e7018"
+    },
+    {
+      "file": "models/translator/model/shared_vocabulary.json",
+      "bytes": 1128373,
+      "sha256": "889fd971922b90b1c33cb1af1596f873820c04e6ad0277248ac84e86966a8b2d"
+    },
+    {
+      "file": "models/translator/README.md",
+      "bytes": 413,
+      "sha256": "e5e26f814d1831991f89db4e9a8bc15336def821d6a6c8205a6763cf16148d9c"
+    },
+    {
+      "file": "models/translator/sentencepiece.model",
+      "bytes": 777548,
+      "sha256": "7072c1746f72ca1335eadba63288f7fd938f6107ee1f83494babdae3bba47192"
+    },
+    {
+      "file": "models/translator/stanza/en/tokenize/ewt.pt",
+      "bytes": 630886,
+      "sha256": "7bc5a1523f4e60107640ea44d2cb27c787bc339ba0c93be6c7dbf744d5635cd6"
+    },
+    {
+      "file": "models/translator/stanza/resources.json",
+      "bytes": 121862,
+      "sha256": "39faaee80e6cca9e211dcda8fb3da4f9c024dcff5b4bfc9832a8e0e271db2fda"
+    }
+  ]
+}

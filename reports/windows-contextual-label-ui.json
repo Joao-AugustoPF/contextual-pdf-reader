@@ -1,0 +1,177 @@
+{
+  "verb": {
+    "id": "1792784917782940",
+    "documentId": "f632b5c2f42e89b066052d6db1f22378e245239855501660499f4004930ab701",
+    "pageNumber": 1,
+    "charRange": [
+      43,
+      47
+    ],
+    "quadPointsPdf": [
+      [
+        181.83200073242188,
+        687.4080200195312,
+        200.9840087890625,
+        698.1959838867188
+      ]
+    ],
+    "selectedText": "nest",
+    "detectedExpression": "nest",
+    "shortTranslation": "aninham",
+    "originalSentence": "Because components often nest within one another, each component in the domain\u0002partitioned architecture shown in Figure 9-3 (for example, CatalogCheckout) may use a\npersistence library and have a separate layer for business rules, but the top-level\npartitioning will still revolve around domains.",
+    "translatedSentence": "Porque os componentes geralmente se aninham entre si, cada componente no domínio é a arquitetura particionada mostrada na Figura 9-3 (por exemplo, CatalogCheckout) pode usar uma biblioteca de persistência e ter uma camada separada para regras de negócios, mas o particionamento de nível superior ainda gira em torno de domínios.",
+    "type": "translation",
+    "color": 4294956367,
+    "mode": "B",
+    "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+    "modelVersion": "all-MiniLM-L6-v2@1110a243",
+    "manualOverride": false,
+    "source": "automática",
+    "labelBox": [
+      173.60800476074218,
+      698.4959838867187,
+      209.20800476074217,
+      707.2959838867187
+    ],
+    "labelFontSize": 8.0,
+    "labelLayoutVersion": 3,
+    "marginNote": false,
+    "extractionVersion": "pdfrx-2.10.0",
+    "createdAt": "2026-10-23T16:48:37.782940",
+    "updatedAt": "2026-10-23T16:48:44.450339",
+    "decision": {
+      "mode": "B",
+      "status": "Inconclusivo",
+      "shortTranslation": null,
+      "senseId": null,
+      "semanticScore": null,
+      "confidence": null,
+      "meaningResolved": false,
+      "alignmentResolved": false,
+      "alignmentEvidence": [
+        "Pooling do span alvo; protótipos contextualizados",
+        "Score semântico não calibrado; não é probabilidade",
+        "A seleção está fora do léxico de sentidos desta versão",
+        "Sem âncora segura na tradução"
+      ],
+      "decisionMs": 4914.554,
+      "ranking": []
+    },
+    "reviewedSuggestion": null,
+    "automaticSuggestion": {
+      "basis": "contextual-prefix-alignment",
+      "original": "nest",
+      "translation": "aninham",
+      "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+      "elapsedMs": 146.241,
+      "contextVerified": false,
+      "alignmentResolved": true,
+      "alignmentEvidence": {
+        "method": "prefix",
+        "withoutTargetTranslation": "Porque componentes muitas vezes",
+        "withTargetTranslation": "Porque componentes muitas vezes aninham",
+        "sentenceTranslatedSpan": [
+          36,
+          43
+        ]
+      },
+      "requiresReview": false,
+      "userReviewed": false
+    }
+  },
+  "noun": {
+    "id": "1792784925396805",
+    "documentId": "f632b5c2f42e89b066052d6db1f22378e245239855501660499f4004930ab701",
+    "pageNumber": 1,
+    "charRange": [
+      332,
+      336
+    ],
+    "quadPointsPdf": [
+      [
+        127.52000427246094,
+        459.8800048828125,
+        146.6719970703125,
+        468.1960144042969
+      ]
+    ],
+    "selectedText": "nest",
+    "detectedExpression": "nest",
+    "shortTranslation": "ninho",
+    "originalSentence": "The bird built a nest in the tree.",
+    "translatedSentence": "O pássaro construiu um ninho na árvore.",
+    "type": "translation",
+    "color": 4294956367,
+    "mode": "B",
+    "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+    "modelVersion": "all-MiniLM-L6-v2@1110a243",
+    "manualOverride": false,
+    "source": "automática",
+    "labelBox": [
+      124.09600067138672,
+      468.4960144042969,
+      150.09600067138672,
+      477.2960144042969
+    ],
+    "labelFontSize": 8.0,
+    "labelLayoutVersion": 3,
+    "marginNote": false,
+    "extractionVersion": "pdfrx-2.10.0",
+    "createdAt": "2026-10-23T16:48:45.396805",
+    "updatedAt": "2026-10-23T16:48:45.396805",
+    "decision": {
+      "mode": "B",
+      "status": "Inconclusivo",
+      "shortTranslation": null,
+      "senseId": null,
+      "semanticScore": null,
+      "confidence": null,
+      "meaningResolved": false,
+      "alignmentResolved": false,
+      "alignmentEvidence": [
+        "Pooling do span alvo; protótipos contextualizados",
+        "Score semântico não calibrado; não é probabilidade",
+        "A seleção está fora do léxico de sentidos desta versão",
+        "Sem âncora segura na tradução"
+      ],
+      "decisionMs": 33.709,
+      "ranking": []
+    },
+    "reviewedSuggestion": null,
+    "automaticSuggestion": {
+      "basis": "contextual-prefix-alignment",
+      "original": "nest",
+      "translation": "ninho",
+      "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+      "elapsedMs": 96.69,
+      "contextVerified": false,
+      "alignmentResolved": true,
+      "alignmentEvidence": {
+        "method": "prefix",
+        "withoutTargetTranslation": "O pássaro construiu um",
+        "withTargetTranslation": "O pássaro construiu um ninho",
+        "sentenceTranslatedSpan": [
+          23,
+          28
+        ]
+      },
+      "requiresReview": false,
+      "userReviewed": false
+    }
+  },
+  "verbColdUiMs": 6995.543,
+  "runtimeStatus": {
+    "translatorReady": true,
+    "minilmReady": true,
+    "encoderCalls": 2,
+    "translationCalls": 6,
+    "onnxImported": true,
+    "rssBytes": 230031360,
+    "peakWorkingSetBytes": 230031360,
+    "elapsedMs": 0.3010000000358559
+  },
+  "automaticAnnotationReplacedWithoutDuplicate": true,
+  "savedInOriginalAndPreservedOnReopen": true,
+  "panelOpened": false,
+  "personalDocumentsUsed": false
+}

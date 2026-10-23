@@ -1,0 +1,34 @@
+{
+  "platform": "windows",
+  "selectedWithPunctuation": "programming.",
+  "savedSelection": "programming",
+  "automaticTranslation": "Programação",
+  "quickFlowElapsedMs": 1204.852,
+  "zoomPreserved": true,
+  "darkTextPixelsAfterSaving": 862,
+  "quickRuntimeStatus": {
+    "translatorReady": true,
+    "minilmReady": true,
+    "encoderCalls": 0,
+    "translationCalls": 1,
+    "onnxImported": false,
+    "rssBytes": 147836928,
+    "peakWorkingSetBytes": 177205248,
+    "elapsedMs": 19.278299994766712
+  },
+  "computerCase": {
+    "basis": "isolated-translation",
+    "original": "computer",
+    "translation": "computador",
+    "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+    "elapsedMs": 24.742,
+    "contextVerified": false,
+    "alignmentResolved": false,
+    "requiresReview": true
+  },
+  "popupOpenedAutomatically": false,
+  "actualTranslationSavedInOriginalPdf": true,
+  "legacyManualAnnotationPreserved": true,
+  "explicitDetailsOpened": true,
+  "userDatabaseUsed": false
+}

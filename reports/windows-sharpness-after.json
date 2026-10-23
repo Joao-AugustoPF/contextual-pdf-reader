@@ -1,0 +1,23 @@
+{
+  "stage": "after",
+  "annotationAndSaveCycles": 24,
+  "zoomAndNavigationCycles": 6,
+  "zoom": 2.0127388535031847,
+  "annotations": 12,
+  "roi": [
+    392.1989092978702,
+    439.4654082280056,
+    750.6905128819168,
+    464.9131652443272
+  ],
+  "comparedPixels": 8568,
+  "changedPixels": 0,
+  "meanAbsoluteDifference": 0.0,
+  "darkPixelsBefore": 951,
+  "darkPixelsAfter": 951,
+  "pdfBaseRenderSha256": "f9924bde5b3069858db9d9d25aff15b269db4a42bac24691844139459f385885",
+  "pdfSavedRenderSha256": "f9924bde5b3069858db9d9d25aff15b269db4a42bac24691844139459f385885",
+  "originalTextPreserved": true,
+  "workingPdfUnchanged": true,
+  "personalDocumentsUsed": false
+}

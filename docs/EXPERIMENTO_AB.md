@@ -1,0 +1,15 @@
+# Experimento A/B
+
+Unidade experimental: a mesma seleção, frase, expressão e lista de candidatos. Cada par usa uma chamada ao tradutor de frases. A tradução completa não é atribuída a B como ganho de encoder. Custos de tradução, decisão A, decisão B e total são separados.
+
+A procura âncora única no texto traduzido e se abstém se houver alternativas. B acrescenta MiniLM real, hidden states dos tokens alvo, média normalizada e protótipos de spans em frases distintas. Não calcula apenas similaridade global de frases nem compara vetor de palavra a definição em português. Para expressões separáveis, o objeto intermediário não entra no pooling. Léxico fechado limita cobertura; o resultado tem status experimental.
+
+O corpus tem 64 exemplos explícitos, 60 com sentido esperado e 4 de abstenção. Categorias: polissemia, contexto técnico, phrasal verbs, idioms, flexões, negação, pontuação e abstenção. As frases de avaliação não são usadas como protótipos. Origem CC0 autoral do agente: `agent-authored-explicit-unvalidated`. É um conjunto de teste exploratório, sem validação humana independente; não é lícito apresentá-lo como gold humano. Não houve treino nem calibração; não existem probabilidades calibradas ou limiar escolhido olhando seus rótulos.
+
+Acurácia curta compara resultado às equivalências explicitamente permitidas por exemplo. Variações legítimas ausentes do gold são erros nessa métrica; isso ocorre com “procure”, “abaixe”, “corri”. Abstenção conta como acerto somente nas quatro amostras em que é a saída esperada. Modelo indisponível/falha não conta como abstenção correta. Acurácia de sentido é distinta da tradução curta. Localizar uma palavra presente não prova alinhamento; a métrica de alinhamento independente permanece indisponível por falta de rótulos PT de spans.
+
+O CLI mede A primeiro e audita zero encoderCalls e nenhum import ONNX. Depois mede o primeiro uso B frio, avalia as mesmas 64 amostras com cache de tradução desligado e protótipos carregados conforme demanda, registra repetição quente e uma repetição com cache hit separada. Portanto, a distribuição de decisão B do lote mistura protótipos frios/quentes, identificada no relatório; não confundir com puro warm-start. A fonte do tradutor e a ordem são registradas. Cache do encoder cobre apenas protótipos, nunca rótulos/decisões.
+
+Relatórios `reports/benchmark.json` e `.csv` contêm todas as decisões, candidatos, rankings, frases reais traduzidas, métricas e o manifest. A UI Laboratório executa a mesma função `evaluate`. Decisões de preferência de usuários ficam locais com proveniência própria e não entram nos resultados gold automaticamente.
+
+Interpretar diferença pareada como exploratória. Corpus pequeno e correlacionado com o léxico/protótipos escritos pelo mesmo autor cria viés; nenhuma afirmação de melhoria generalizável. Para evoluir: obter 200–500 seleções independentes consentidas e revisadas por humanos, separar validação/calibração/teste e avaliar encoder especializado ou fine-tuning compacto antes de promover B a padrão.

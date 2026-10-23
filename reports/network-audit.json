@@ -1,0 +1,12 @@
+{
+  "original": {
+    "airplane": "disabled",
+    "wifi": "1",
+    "data": "1"
+  },
+  "disabledBeforeInference": true,
+  "airplaneDuringInference": "enabled",
+  "wifiDuringInference": "Wifi is disabled\nWifi scanning is only available when wifi is enabled",
+  "exitCode": 0,
+  "restored": true
+}

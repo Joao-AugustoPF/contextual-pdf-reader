@@ -1,0 +1,15 @@
+{
+  "platform": "windows",
+  "wheelEventDelta": 20,
+  "baselineZoom": 2.0678071467605195,
+  "baselineInstantPixels": 8.27122858704202,
+  "readerZoom": 2.0678071467605195,
+  "smoothIntermediatePixels": 20.734542345462568,
+  "smoothFinalPixels": 79.99963926803893,
+  "wheelEventsToNextPage": 20,
+  "scrollbarDragToStart": true,
+  "trackClickProgress": 0.6163790785001059,
+  "scrollbarDragToEndAfterZoom": true,
+  "zoomPreservedByScrollbar": true,
+  "userDatabaseUsed": false
+}

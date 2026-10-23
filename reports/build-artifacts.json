@@ -1,0 +1,10 @@
+{
+  "file": "app\\build\\app\\outputs\\flutter-apk\\app-arm64-v8a-release.apk",
+  "bytes": 74634011,
+  "sha256": "18df973006064eff5864b53ab4e74d41f0a7b0633e08490b797151cac0750ab1",
+  "abis": [
+    "arm64-v8a"
+  ],
+  "signing": "Flutter debug key for local installation; not store signing",
+  "execution": "release compiled; runtime validation used debug x86_64 AVD"
+}

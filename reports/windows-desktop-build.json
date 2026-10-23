@@ -1,0 +1,45 @@
+{
+  "timestampUtc": "2026-10-23T19:55:55.6422291Z",
+  "command": "flutter build windows --release --no-pub",
+  "exitCode": 0,
+  "buildSeconds": 94.144,
+  "bundle": "C:\\src\\estudos\\contextual-pdf-reader\\app\\build\\windows\\x64\\runner\\Release",
+  "artifacts": [
+    {
+      "file": "contextual_pdf_reader.exe",
+      "bytes": 92160,
+      "sha256": "05fa6d2b6fccbcb28e85fdcd41bd90831758ed12361045d916bf07da0d357efd",
+      "modifiedUtc": "2026-10-23T16:29:46.4541297Z"
+    },
+    {
+      "file": "data\\app.so",
+      "bytes": 9716616,
+      "sha256": "08305d2010eadb62dcf7a8185ac73e3229e99b74355b13a57ee7ecc06a25300b",
+      "modifiedUtc": "2026-10-23T19:54:16.8096602Z"
+    },
+    {
+      "file": "flutter_windows.dll",
+      "bytes": 21274112,
+      "sha256": "7b03815958c49d72385be497fbd0eb1bb2ae27d24989d6c9aee83eafbd93e9d3",
+      "modifiedUtc": "2026-10-23T16:23:30.3491130Z"
+    },
+    {
+      "file": "runtime\\reader-runtime.exe",
+      "bytes": 14018900,
+      "sha256": "3262054b5bd7f7103ec2cbf7fc91815a336b58a36a634122b3478aa65055c576",
+      "modifiedUtc": "2026-10-23T16:28:14.2400496Z"
+    }
+  ],
+  "contextualLabelReport": "reports/windows-contextual-labels.json",
+  "contextualLabelUiReport": "reports/windows-contextual-label-ui.json",
+  "comparisonReport": "reports/windows-comparison-suggestion.json",
+  "domainTestsPassed": 56,
+  "windowsIntegrationTestsPassed": 2,
+  "analyzerIssues": 0,
+  "launch": {
+    "id": 42308,
+    "hasExited": false,
+    "mainWindowHandle": 52825116,
+    "title": "contextual_pdf_reader"
+  }
+}

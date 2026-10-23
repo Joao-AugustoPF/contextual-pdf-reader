@@ -1,0 +1,40 @@
+name: contextual_pdf_reader
+description: Leitor PDF offline com tradução e experimento contextual A/B.
+publish_to: none
+version: 0.1.0+1
+environment:
+  sdk: '>=3.13.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  pdfrx: 2.10.0
+  material_ui: any
+  flutter_riverpod: 3.4.3
+  google_mlkit_translation: 0.15.1
+  flutter_onnxruntime: 1.9.0
+  drift: 2.35.2
+  sqlite3: ^3.1.0
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  file_picker: 13.1.0
+  desktop_drop: ^0.7.0
+  crypto: ^3.0.6
+  pdf_document: 10.0.0
+  archive: ^4.5.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/lexicon.json
+    - assets/evaluation.json
+    - assets/models.lock.json
+    - assets/sample.pdf
+    - assets/sample-large.pdf
+    - assets/google-translate.png

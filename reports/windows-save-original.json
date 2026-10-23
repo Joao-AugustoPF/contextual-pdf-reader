@@ -1,0 +1,22 @@
+{
+  "platform": "windows",
+  "firstSaveMs": 318.299,
+  "initialBytes": 2848,
+  "firstSaveBytes": 5636,
+  "editedBytes": 8441,
+  "unchangedSaveBytesIdentical": true,
+  "annotationsAfterSave": 2,
+  "annotationsAfterEditing": 2,
+  "annotationsAfterDeletingAndSaving": 0,
+  "partialSelectionRemoval": true,
+  "undoRestoredTranslationAndDatabase": true,
+  "unrelatedHighlightPreserved": true,
+  "removedDirectlyFromAnnotationList": true,
+  "ctrlSUpdatedOriginal": true,
+  "viewerAndZoomPreserved": true,
+  "documentIdentityPreservedOnReopen": true,
+  "annotationsInWorkingBaseAfterReopen": 0,
+  "pdfFilesInUserFolder": 1,
+  "userDocumentsOrDatabaseUsed": false,
+  "modelsInvoked": false
+}

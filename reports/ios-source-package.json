@@ -1,0 +1,17 @@
+{
+  "file": "contextual-pdf-reader-ios-fontes.zip",
+  "bytes": 388995,
+  "sha256": "cf3870d0ddeb0373f22ec50798662f4a96defdc79c5e69d4c32c1f07864ce58f",
+  "entries": 105,
+  "zipIntegrityVerified": true,
+  "requiredSourcesPresent": true,
+  "iosBuildExecuted": false,
+  "iosOriginalSaveImplementationIncluded": true,
+  "contextualLabelAlignmentIncluded": true,
+  "nativeXCTestCasesIncluded": 3,
+  "cloudWorkflowsIncluded": [
+    "ios-verificar",
+    "ios-testflight"
+  ],
+  "includesPersonalDocumentsOrInstalledModels": false
+}

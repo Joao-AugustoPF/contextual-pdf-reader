@@ -1,0 +1,13 @@
+{
+  "platform": "windows",
+  "doubleClickPlainWord": true,
+  "doubleClickHighlightedWord": true,
+  "doubleClickInsideHighlightedPhrase": true,
+  "dragAcrossAnnotation": true,
+  "doubleClickAfterZoom": true,
+  "singleClickAnnotationDetails": true,
+  "darkPixelsBefore": 290,
+  "darkPixelsPreserved": 290,
+  "strongBackgroundPixels": 729,
+  "userDatabaseUsed": false
+}

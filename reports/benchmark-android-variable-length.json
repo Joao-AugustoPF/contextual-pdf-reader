@@ -1,0 +1,6239 @@
+{
+  "environment": {
+    "platform": "android",
+    "device": "emulator Android x86_64; não aparelho físico",
+    "rssBeforeInference": 583684096,
+    "rssAfterEvaluation": 685707264,
+    "airplaneModeRequestedByTest": true,
+    "offlineVerified": false,
+    "offlineAuditNote": "Screenshot callback ran after evaluation; this run does not prove offline operation"
+  },
+  "summary": {
+    "n": 64,
+    "A": {
+      "available": 64,
+      "correct": 34,
+      "accuracy": 0.53125,
+      "abstentions": 22,
+      "senseCorrect": 36,
+      "senseLabeled": 60,
+      "decisionP50Ms": 0.15,
+      "decisionP95Ms": 0.483,
+      "calibratedConfidence": false,
+      "highConfidenceErrors": null
+    },
+    "B": {
+      "available": 64,
+      "correct": 40,
+      "accuracy": 0.625,
+      "abstentions": 18,
+      "senseCorrect": 58,
+      "senseLabeled": 60,
+      "decisionP50Ms": 35.98,
+      "decisionP95Ms": 96.19,
+      "calibratedConfidence": false,
+      "highConfidenceErrors": null
+    },
+    "gainsB": 7,
+    "lossesB": 1,
+    "expressionCorrect": 64,
+    "alignmentAccuracy": null,
+    "alignmentReason": "Sem rótulos humanos independentes de alinhamento de spans PT; presença lexical não prova alinhamento",
+    "translationP50Ms": 40.041,
+    "translationP95Ms": 79.425,
+    "pairedNetAccuracyDifference": 0.09375,
+    "pairedStandardError": 0.0429490169335173,
+    "categories": {
+      "phrasal_verb": {
+        "n": 11,
+        "A": 5,
+        "B": 5
+      },
+      "polysemy": {
+        "n": 20,
+        "A": 13,
+        "B": 16
+      },
+      "technical": {
+        "n": 13,
+        "A": 7,
+        "B": 9
+      },
+      "idiom": {
+        "n": 6,
+        "A": 3,
+        "B": 3
+      },
+      "inflection": {
+        "n": 5,
+        "A": 2,
+        "B": 2
+      },
+      "negation": {
+        "n": 2,
+        "A": 2,
+        "B": 2
+      },
+      "punctuation": {
+        "n": 3,
+        "A": 1,
+        "B": 2
+      },
+      "abstain": {
+        "n": 4,
+        "A": 1,
+        "B": 1
+      }
+    },
+    "provenance": "Fixtures autorais do agente; revisão humana pendente; sem calibração/tuning nos rótulos de teste"
+  },
+  "cold": {
+    "sentenceOriginal": "I decided to give up programming.",
+    "sentenceTranslated": "Eu decidi desistir de programação.",
+    "originalSpan": [
+      13,
+      17
+    ],
+    "detectedExpression": "give up",
+    "expressionSpan": [
+      13,
+      20
+    ],
+    "tokenSpans": [
+      [
+        13,
+        17
+      ],
+      [
+        18,
+        20
+      ]
+    ],
+    "candidateTranslations": [
+      {
+        "senseId": "stop",
+        "translations": [
+          "desistir",
+          "abandonar",
+          "desistiu",
+          "desisti"
+        ]
+      }
+    ],
+    "A": {
+      "mode": "A",
+      "status": "Correspondência lexical",
+      "shortTranslation": "desistir",
+      "senseId": "stop",
+      "semanticScore": null,
+      "confidence": null,
+      "meaningResolved": true,
+      "alignmentResolved": true,
+      "alignmentEvidence": [
+        "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+      ],
+      "decisionMs": 3.338,
+      "ranking": []
+    },
+    "B": {
+      "mode": "B",
+      "status": "Resultado experimental",
+      "shortTranslation": "desistir",
+      "senseId": "stop",
+      "semanticScore": 0.7963708753723973,
+      "confidence": null,
+      "meaningResolved": true,
+      "alignmentResolved": true,
+      "alignmentEvidence": [
+        "Pooling do span alvo; protótipos contextualizados",
+        "Score semântico não calibrado; não é probabilidade",
+        "Candidato localizado na frase traduzida"
+      ],
+      "decisionMs": 1864.854,
+      "ranking": [
+        {
+          "senseId": "stop",
+          "score": 0.7963708753723973
+        }
+      ]
+    },
+    "translationMs": 451.99,
+    "totalMs": 2323.719,
+    "cacheHit": false
+  },
+  "samples": [
+    {
+      "id": "phrasal_verb-001",
+      "sentence": "I decided to give up programming.",
+      "selectedText": "give",
+      "start": 13,
+      "end": 17,
+      "expectedExpression": "give up",
+      "expectedSense": "stop",
+      "acceptableTranslationsPtBr": [
+        "desistir",
+        "abandonar"
+      ],
+      "category": "phrasal_verb",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "I decided to give up programming.",
+      "sentenceTranslated": "Eu decidi desistir de programação.",
+      "originalSpan": [
+        13,
+        17
+      ],
+      "detectedExpression": "give up",
+      "expressionSpan": [
+        13,
+        20
+      ],
+      "tokenSpans": [
+        [
+          13,
+          17
+        ],
+        [
+          18,
+          20
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "stop",
+          "translations": [
+            "desistir",
+            "abandonar",
+            "desistiu",
+            "desisti"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "desistir",
+        "senseId": "stop",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.164,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "desistir",
+        "senseId": "stop",
+        "semanticScore": 0.7963708753723973,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 40.551,
+        "ranking": [
+          {
+            "senseId": "stop",
+            "score": 0.7963708753723973
+          }
+        ]
+      },
+      "translationMs": 54.214,
+      "totalMs": 95.3,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-002",
+      "sentence": "Turn on the light.",
+      "selectedText": "light",
+      "start": 12,
+      "end": 17,
+      "expectedExpression": "light",
+      "expectedSense": "illumination",
+      "acceptableTranslationsPtBr": [
+        "luz"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Turn on the light.",
+      "sentenceTranslated": "Ligue a luz.",
+      "originalSpan": [
+        12,
+        17
+      ],
+      "detectedExpression": "light",
+      "expressionSpan": [
+        12,
+        17
+      ],
+      "tokenSpans": [
+        [
+          12,
+          17
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "illumination",
+          "translations": [
+            "luz"
+          ]
+        },
+        {
+          "senseId": "lightweight",
+          "translations": [
+            "leve",
+            "leve em recursos"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "luz",
+        "senseId": "illumination",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.394,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "luz",
+        "senseId": "illumination",
+        "semanticScore": 0.8365763622651834,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 76.375,
+        "ranking": [
+          {
+            "senseId": "illumination",
+            "score": 0.8365763622651834
+          },
+          {
+            "senseId": "lightweight",
+            "score": 0.7242973795449142
+          }
+        ]
+      },
+      "translationMs": 79.425,
+      "totalMs": 156.604,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-003",
+      "sentence": "This framework is light and fast.",
+      "selectedText": "light",
+      "start": 18,
+      "end": 23,
+      "expectedExpression": "light",
+      "expectedSense": "lightweight",
+      "acceptableTranslationsPtBr": [
+        "leve",
+        "leve em recursos"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "This framework is light and fast.",
+      "sentenceTranslated": "Esta estrutura é leve e rápida.",
+      "originalSpan": [
+        18,
+        23
+      ],
+      "detectedExpression": "light",
+      "expressionSpan": [
+        18,
+        23
+      ],
+      "tokenSpans": [
+        [
+          18,
+          23
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "illumination",
+          "translations": [
+            "luz"
+          ]
+        },
+        {
+          "senseId": "lightweight",
+          "translations": [
+            "leve",
+            "leve em recursos"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "leve",
+        "senseId": "lightweight",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.483,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "leve",
+        "senseId": "lightweight",
+        "semanticScore": 0.71742549551121,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 32.846,
+        "ranking": [
+          {
+            "senseId": "lightweight",
+            "score": 0.71742549551121
+          },
+          {
+            "senseId": "illumination",
+            "score": 0.5617559461406815
+          }
+        ]
+      },
+      "translationMs": 53.702,
+      "totalMs": 87.539,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-004",
+      "sentence": "She deposited cash at the bank.",
+      "selectedText": "bank",
+      "start": 26,
+      "end": 30,
+      "expectedExpression": "bank",
+      "expectedSense": "financial",
+      "acceptableTranslationsPtBr": [
+        "banco"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "She deposited cash at the bank.",
+      "sentenceTranslated": "Ela depositou dinheiro no banco.",
+      "originalSpan": [
+        26,
+        30
+      ],
+      "detectedExpression": "bank",
+      "expressionSpan": [
+        26,
+        30
+      ],
+      "tokenSpans": [
+        [
+          26,
+          30
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "financial",
+          "translations": [
+            "banco"
+          ]
+        },
+        {
+          "senseId": "river_edge",
+          "translations": [
+            "margem",
+            "beira"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "banco",
+        "senseId": "financial",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.255,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "banco",
+        "senseId": "financial",
+        "semanticScore": 0.8238149636112373,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 65.347,
+        "ranking": [
+          {
+            "senseId": "financial",
+            "score": 0.8238149636112373
+          },
+          {
+            "senseId": "river_edge",
+            "score": 0.7091209565089516
+          }
+        ]
+      },
+      "translationMs": 52.53,
+      "totalMs": 118.729,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-005",
+      "sentence": "The fisherman sat on the river bank.",
+      "selectedText": "bank",
+      "start": 31,
+      "end": 35,
+      "expectedExpression": "bank",
+      "expectedSense": "river_edge",
+      "acceptableTranslationsPtBr": [
+        "margem",
+        "beira"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The fisherman sat on the river bank.",
+      "sentenceTranslated": "O pescador sentou-se na margem do rio.",
+      "originalSpan": [
+        31,
+        35
+      ],
+      "detectedExpression": "bank",
+      "expressionSpan": [
+        31,
+        35
+      ],
+      "tokenSpans": [
+        [
+          31,
+          35
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "financial",
+          "translations": [
+            "banco"
+          ]
+        },
+        {
+          "senseId": "river_edge",
+          "translations": [
+            "margem",
+            "beira"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "margem",
+        "senseId": "river_edge",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.189,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "financial",
+        "semanticScore": 0.7790787792977499,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 15.903,
+        "ranking": [
+          {
+            "senseId": "financial",
+            "score": 0.7790787792977499
+          },
+          {
+            "senseId": "river_edge",
+            "score": 0.7549545526784792
+          }
+        ]
+      },
+      "translationMs": 53.885,
+      "totalMs": 70.242,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-006",
+      "sentence": "There is no extra charge for delivery.",
+      "selectedText": "charge",
+      "start": 18,
+      "end": 24,
+      "expectedExpression": "charge",
+      "expectedSense": "fee",
+      "acceptableTranslationsPtBr": [
+        "taxa",
+        "cobrança"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "There is no extra charge for delivery.",
+      "sentenceTranslated": "Não há taxa extra para entrega.",
+      "originalSpan": [
+        18,
+        24
+      ],
+      "detectedExpression": "charge",
+      "expressionSpan": [
+        18,
+        24
+      ],
+      "tokenSpans": [
+        [
+          18,
+          24
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "fee",
+          "translations": [
+            "cobrança",
+            "taxa",
+            "cobrar"
+          ]
+        },
+        {
+          "senseId": "electricity",
+          "translations": [
+            "carga",
+            "carregar"
+          ]
+        },
+        {
+          "senseId": "accusation",
+          "translations": [
+            "acusação",
+            "acusar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "taxa",
+        "senseId": "fee",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.195,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "taxa",
+        "senseId": "fee",
+        "semanticScore": 0.7954114253522628,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 1243.23,
+        "ranking": [
+          {
+            "senseId": "fee",
+            "score": 0.7954114253522628
+          },
+          {
+            "senseId": "electricity",
+            "score": 0.7345055436860248
+          },
+          {
+            "senseId": "accusation",
+            "score": 0.5740406050287435
+          }
+        ]
+      },
+      "translationMs": 74.431,
+      "totalMs": 1318.179,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-007",
+      "sentence": "The phone needs a charge.",
+      "selectedText": "charge",
+      "start": 18,
+      "end": 24,
+      "expectedExpression": "charge",
+      "expectedSense": "electricity",
+      "acceptableTranslationsPtBr": [
+        "carga",
+        "carregar"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The phone needs a charge.",
+      "sentenceTranslated": "O telefone precisa de uma carga.",
+      "originalSpan": [
+        18,
+        24
+      ],
+      "detectedExpression": "charge",
+      "expressionSpan": [
+        18,
+        24
+      ],
+      "tokenSpans": [
+        [
+          18,
+          24
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "fee",
+          "translations": [
+            "cobrança",
+            "taxa",
+            "cobrar"
+          ]
+        },
+        {
+          "senseId": "electricity",
+          "translations": [
+            "carga",
+            "carregar"
+          ]
+        },
+        {
+          "senseId": "accusation",
+          "translations": [
+            "acusação",
+            "acusar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "carga",
+        "senseId": "electricity",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.243,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "carga",
+        "senseId": "electricity",
+        "semanticScore": 0.8595172763478465,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 17.949,
+        "ranking": [
+          {
+            "senseId": "electricity",
+            "score": 0.8595172763478465
+          },
+          {
+            "senseId": "fee",
+            "score": 0.8096240700829603
+          },
+          {
+            "senseId": "accusation",
+            "score": 0.586202536740358
+          }
+        ]
+      },
+      "translationMs": 44.005,
+      "totalMs": 62.703,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-008",
+      "sentence": "The prosecutor filed a charge of fraud.",
+      "selectedText": "charge",
+      "start": 23,
+      "end": 29,
+      "expectedExpression": "charge",
+      "expectedSense": "accusation",
+      "acceptableTranslationsPtBr": [
+        "acusação"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The prosecutor filed a charge of fraud.",
+      "sentenceTranslated": "O promotor arquivou uma carga de fraude.",
+      "originalSpan": [
+        23,
+        29
+      ],
+      "detectedExpression": "charge",
+      "expressionSpan": [
+        23,
+        29
+      ],
+      "tokenSpans": [
+        [
+          23,
+          29
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "fee",
+          "translations": [
+            "cobrança",
+            "taxa",
+            "cobrar"
+          ]
+        },
+        {
+          "senseId": "electricity",
+          "translations": [
+            "carga",
+            "carregar"
+          ]
+        },
+        {
+          "senseId": "accusation",
+          "translations": [
+            "acusação",
+            "acusar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "carga",
+        "senseId": "electricity",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.156,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "accusation",
+        "semanticScore": 0.8036473402083677,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 28.527,
+        "ranking": [
+          {
+            "senseId": "accusation",
+            "score": 0.8036473402083677
+          },
+          {
+            "senseId": "fee",
+            "score": 0.7030792800926045
+          },
+          {
+            "senseId": "electricity",
+            "score": 0.5871917756438699
+          }
+        ]
+      },
+      "translationMs": 50.992,
+      "totalMs": 79.976,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-009",
+      "sentence": "We run automated tests every morning.",
+      "selectedText": "run",
+      "start": 3,
+      "end": 6,
+      "expectedExpression": "run",
+      "expectedSense": "execute",
+      "acceptableTranslationsPtBr": [
+        "executar",
+        "rodar"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "We run automated tests every morning.",
+      "sentenceTranslated": "Nós executamos testes automatizados todas as manhãs.",
+      "originalSpan": [
+        3,
+        6
+      ],
+      "detectedExpression": "run",
+      "expressionSpan": [
+        3,
+        6
+      ],
+      "tokenSpans": [
+        [
+          3,
+          6
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "execute",
+          "translations": [
+            "executar",
+            "rodar"
+          ]
+        },
+        {
+          "senseId": "jog",
+          "translations": [
+            "correr",
+            "corrida"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "executamos",
+        "senseId": "execute",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.294,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "executamos",
+        "senseId": "execute",
+        "semanticScore": 0.5363502423754601,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 96.19,
+        "ranking": [
+          {
+            "senseId": "execute",
+            "score": 0.5363502423754601
+          },
+          {
+            "senseId": "jog",
+            "score": 0.5344379861033414
+          }
+        ]
+      },
+      "translationMs": 444.077,
+      "totalMs": 540.791,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-010",
+      "sentence": "I run five miles before breakfast.",
+      "selectedText": "run",
+      "start": 2,
+      "end": 5,
+      "expectedExpression": "run",
+      "expectedSense": "jog",
+      "acceptableTranslationsPtBr": [
+        "correr",
+        "corro"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "I run five miles before breakfast.",
+      "sentenceTranslated": "Eu corro cinco milhas antes do café da manhã.",
+      "originalSpan": [
+        2,
+        5
+      ],
+      "detectedExpression": "run",
+      "expressionSpan": [
+        2,
+        5
+      ],
+      "tokenSpans": [
+        [
+          2,
+          5
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "execute",
+          "translations": [
+            "executar",
+            "rodar"
+          ]
+        },
+        {
+          "senseId": "jog",
+          "translations": [
+            "correr",
+            "corrida"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "corro",
+        "senseId": "jog",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 2.783,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "corro",
+        "senseId": "jog",
+        "semanticScore": 0.7539080308937526,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 15.242,
+        "ranking": [
+          {
+            "senseId": "jog",
+            "score": 0.7539080308937526
+          },
+          {
+            "senseId": "execute",
+            "score": 0.32154815571501144
+          }
+        ]
+      },
+      "translationMs": 39.824,
+      "totalMs": 58.03,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "phrasal_verb-011",
+      "sentence": "She will never give in to threats.",
+      "selectedText": "give",
+      "start": 15,
+      "end": 19,
+      "expectedExpression": "give in",
+      "expectedSense": "yield",
+      "acceptableTranslationsPtBr": [
+        "ceder"
+      ],
+      "category": "phrasal_verb",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "She will never give in to threats.",
+      "sentenceTranslated": "Ela nunca cederá a ameaças.",
+      "originalSpan": [
+        15,
+        19
+      ],
+      "detectedExpression": "give in",
+      "expressionSpan": [
+        15,
+        22
+      ],
+      "tokenSpans": [
+        [
+          15,
+          19
+        ],
+        [
+          20,
+          22
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "yield",
+          "translations": [
+            "ceder",
+            "cedeu",
+            "render"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.15,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "yield",
+        "semanticScore": 0.57552685786926,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 39.832,
+        "ranking": [
+          {
+            "senseId": "yield",
+            "score": 0.57552685786926
+          }
+        ]
+      },
+      "translationMs": 41.281,
+      "totalMs": 81.492,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "phrasal_verb-012",
+      "sentence": "We plan to give away these books.",
+      "selectedText": "give",
+      "start": 11,
+      "end": 15,
+      "expectedExpression": "give away",
+      "expectedSense": "donate",
+      "acceptableTranslationsPtBr": [
+        "doar",
+        "dar",
+        "distribuir"
+      ],
+      "category": "phrasal_verb",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "We plan to give away these books.",
+      "sentenceTranslated": "Nós planejamos dar esses livros.",
+      "originalSpan": [
+        11,
+        15
+      ],
+      "detectedExpression": "give away",
+      "expressionSpan": [
+        11,
+        20
+      ],
+      "tokenSpans": [
+        [
+          11,
+          15
+        ],
+        [
+          16,
+          20
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "donate",
+          "translations": [
+            "doar",
+            "distribuir",
+            "dar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "dar",
+        "senseId": "donate",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.331,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "dar",
+        "senseId": "donate",
+        "semanticScore": 0.79716751785163,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 40.104,
+        "ranking": [
+          {
+            "senseId": "donate",
+            "score": 0.79716751785163
+          }
+        ]
+      },
+      "translationMs": 37.523,
+      "totalMs": 78.247,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "phrasal_verb-013",
+      "sentence": "Please look up this word in a dictionary.",
+      "selectedText": "look",
+      "start": 7,
+      "end": 11,
+      "expectedExpression": "look up",
+      "expectedSense": "search",
+      "acceptableTranslationsPtBr": [
+        "consultar",
+        "pesquisar",
+        "procurar"
+      ],
+      "category": "phrasal_verb",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Please look up this word in a dictionary.",
+      "sentenceTranslated": "Por favor, procure esta palavra em um dicionário.",
+      "originalSpan": [
+        7,
+        11
+      ],
+      "detectedExpression": "look up",
+      "expressionSpan": [
+        7,
+        14
+      ],
+      "tokenSpans": [
+        [
+          7,
+          11
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "search",
+          "translations": [
+            "pesquisar",
+            "consultar",
+            "procurar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "procure",
+        "senseId": "search",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.385,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "procure",
+        "senseId": "search",
+        "semanticScore": 0.527713526494473,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 43.738,
+        "ranking": [
+          {
+            "senseId": "search",
+            "score": 0.527713526494473
+          }
+        ]
+      },
+      "translationMs": 49.291,
+      "totalMs": 93.831,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "phrasal_verb-014",
+      "sentence": "Can you look after my cat tomorrow?",
+      "selectedText": "look",
+      "start": 8,
+      "end": 12,
+      "expectedExpression": "look after",
+      "expectedSense": "care",
+      "acceptableTranslationsPtBr": [
+        "cuidar",
+        "cuidar de"
+      ],
+      "category": "phrasal_verb",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Can you look after my cat tomorrow?",
+      "sentenceTranslated": "Você pode cuidar do meu gato amanhã?",
+      "originalSpan": [
+        8,
+        12
+      ],
+      "detectedExpression": "look after",
+      "expressionSpan": [
+        8,
+        18
+      ],
+      "tokenSpans": [
+        [
+          8,
+          12
+        ],
+        [
+          13,
+          18
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "care",
+          "translations": [
+            "cuidar",
+            "cuidar de"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "cuidar",
+        "senseId": "care",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.153,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "cuidar",
+        "senseId": "care",
+        "semanticScore": 0.6819018932964123,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 42.544,
+        "ranking": [
+          {
+            "senseId": "care",
+            "score": 0.6819018932964123
+          }
+        ]
+      },
+      "translationMs": 36.013,
+      "totalMs": 78.949,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "phrasal_verb-015",
+      "sentence": "They may turn down the job offer.",
+      "selectedText": "turn",
+      "start": 9,
+      "end": 13,
+      "expectedExpression": "turn down",
+      "expectedSense": "reject",
+      "acceptableTranslationsPtBr": [
+        "recusar",
+        "rejeitar"
+      ],
+      "category": "phrasal_verb",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "They may turn down the job offer.",
+      "sentenceTranslated": "Eles podem desligar a oferta de emprego.",
+      "originalSpan": [
+        9,
+        13
+      ],
+      "detectedExpression": "turn down",
+      "expressionSpan": [
+        9,
+        18
+      ],
+      "tokenSpans": [
+        [
+          9,
+          13
+        ],
+        [
+          14,
+          18
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "reject",
+          "translations": [
+            "recusar",
+            "rejeitar"
+          ]
+        },
+        {
+          "senseId": "reduce",
+          "translations": [
+            "diminuir",
+            "abaixar",
+            "reduzir"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.159,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "reject",
+        "semanticScore": 0.8697386826470536,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 69.426,
+        "ranking": [
+          {
+            "senseId": "reject",
+            "score": 0.8697386826470536
+          },
+          {
+            "senseId": "reduce",
+            "score": 0.640063723429392
+          }
+        ]
+      },
+      "translationMs": 36.133,
+      "totalMs": 105.902,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "phrasal_verb-016",
+      "sentence": "Please turn down the music.",
+      "selectedText": "turn",
+      "start": 7,
+      "end": 11,
+      "expectedExpression": "turn down",
+      "expectedSense": "reduce",
+      "acceptableTranslationsPtBr": [
+        "abaixar",
+        "diminuir",
+        "reduzir"
+      ],
+      "category": "phrasal_verb",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Please turn down the music.",
+      "sentenceTranslated": "Por favor, desligue a música.",
+      "originalSpan": [
+        7,
+        11
+      ],
+      "detectedExpression": "turn down",
+      "expressionSpan": [
+        7,
+        16
+      ],
+      "tokenSpans": [
+        [
+          7,
+          11
+        ],
+        [
+          12,
+          16
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "reject",
+          "translations": [
+            "recusar",
+            "rejeitar"
+          ]
+        },
+        {
+          "senseId": "reduce",
+          "translations": [
+            "diminuir",
+            "abaixar",
+            "reduzir"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.259,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "reduce",
+        "semanticScore": 0.8291599559234222,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 44.854,
+        "ranking": [
+          {
+            "senseId": "reduce",
+            "score": 0.8291599559234222
+          },
+          {
+            "senseId": "reject",
+            "score": 0.8034592368337651
+          }
+        ]
+      },
+      "translationMs": 33.95,
+      "totalMs": 80.295,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "phrasal_verb-017",
+      "sentence": "Let us set up the development environment.",
+      "selectedText": "set",
+      "start": 7,
+      "end": 10,
+      "expectedExpression": "set up",
+      "expectedSense": "establish",
+      "acceptableTranslationsPtBr": [
+        "configurar",
+        "montar",
+        "criar"
+      ],
+      "category": "phrasal_verb",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Let us set up the development environment.",
+      "sentenceTranslated": "Vamos configurar o ambiente de desenvolvimento.",
+      "originalSpan": [
+        7,
+        10
+      ],
+      "detectedExpression": "set up",
+      "expressionSpan": [
+        7,
+        13
+      ],
+      "tokenSpans": [
+        [
+          7,
+          10
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "establish",
+          "translations": [
+            "configurar",
+            "montar",
+            "criar",
+            "instalar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "configurar",
+        "senseId": "establish",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.081,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "configurar",
+        "senseId": "establish",
+        "semanticScore": 0.7146705149573088,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 37.79,
+        "ranking": [
+          {
+            "senseId": "establish",
+            "score": 0.7146705149573088
+          }
+        ]
+      },
+      "translationMs": 42.865,
+      "totalMs": 80.876,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "phrasal_verb-018",
+      "sentence": "You should carry on with your studies.",
+      "selectedText": "carry",
+      "start": 11,
+      "end": 16,
+      "expectedExpression": "carry on",
+      "expectedSense": "continue",
+      "acceptableTranslationsPtBr": [
+        "continuar",
+        "prosseguir"
+      ],
+      "category": "phrasal_verb",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "You should carry on with your studies.",
+      "sentenceTranslated": "Você deve continuar com seus estudos.",
+      "originalSpan": [
+        11,
+        16
+      ],
+      "detectedExpression": "carry on",
+      "expressionSpan": [
+        11,
+        19
+      ],
+      "tokenSpans": [
+        [
+          11,
+          16
+        ],
+        [
+          17,
+          19
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "continue",
+          "translations": [
+            "continuar",
+            "prosseguir"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "continuar",
+        "senseId": "continue",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.12,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "continuar",
+        "senseId": "continue",
+        "semanticScore": 0.5056376513090404,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 43.51,
+        "ranking": [
+          {
+            "senseId": "continue",
+            "score": 0.5056376513090404
+          }
+        ]
+      },
+      "translationMs": 28.003,
+      "totalMs": 71.902,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "phrasal_verb-019",
+      "sentence": "I often run into my teacher downtown.",
+      "selectedText": "run",
+      "start": 8,
+      "end": 11,
+      "expectedExpression": "run into",
+      "expectedSense": "encounter",
+      "acceptableTranslationsPtBr": [
+        "encontrar",
+        "encontro",
+        "esbarrar"
+      ],
+      "category": "phrasal_verb",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "I often run into my teacher downtown.",
+      "sentenceTranslated": "Eu costumo correr para o meu professor no centro da cidade.",
+      "originalSpan": [
+        8,
+        11
+      ],
+      "detectedExpression": "run into",
+      "expressionSpan": [
+        8,
+        16
+      ],
+      "tokenSpans": [
+        [
+          8,
+          11
+        ],
+        [
+          12,
+          16
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "encounter",
+          "translations": [
+            "encontrar",
+            "encontrei",
+            "esbarrar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.141,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "encounter",
+        "semanticScore": 0.8052263515554112,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 39.796,
+        "ranking": [
+          {
+            "senseId": "encounter",
+            "score": 0.8052263515554112
+          }
+        ]
+      },
+      "translationMs": 39.928,
+      "totalMs": 80.033,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-020",
+      "sentence": "Each thread has its own stack.",
+      "selectedText": "thread",
+      "start": 5,
+      "end": 11,
+      "expectedExpression": "thread",
+      "expectedSense": "computing",
+      "acceptableTranslationsPtBr": [
+        "thread",
+        "linha de execução"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Each thread has its own stack.",
+      "sentenceTranslated": "Cada linha tem sua própria pilha.",
+      "originalSpan": [
+        5,
+        11
+      ],
+      "detectedExpression": "thread",
+      "expressionSpan": [
+        5,
+        11
+      ],
+      "tokenSpans": [
+        [
+          5,
+          11
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "computing",
+          "translations": [
+            "thread",
+            "linha de execução"
+          ]
+        },
+        {
+          "senseId": "fiber",
+          "translations": [
+            "fio",
+            "linha"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "linha",
+        "senseId": "fiber",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.19,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "linha",
+        "senseId": "fiber",
+        "semanticScore": 0.8162164890384849,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 45.067,
+        "ranking": [
+          {
+            "senseId": "fiber",
+            "score": 0.8162164890384849
+          },
+          {
+            "senseId": "computing",
+            "score": 0.801244137794385
+          }
+        ]
+      },
+      "translationMs": 35.527,
+      "totalMs": 80.961,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-021",
+      "sentence": "The red thread broke while sewing.",
+      "selectedText": "thread",
+      "start": 8,
+      "end": 14,
+      "expectedExpression": "thread",
+      "expectedSense": "fiber",
+      "acceptableTranslationsPtBr": [
+        "fio",
+        "linha"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The red thread broke while sewing.",
+      "sentenceTranslated": "A linha vermelha quebrou enquanto costura.",
+      "originalSpan": [
+        8,
+        14
+      ],
+      "detectedExpression": "thread",
+      "expressionSpan": [
+        8,
+        14
+      ],
+      "tokenSpans": [
+        [
+          8,
+          14
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "computing",
+          "translations": [
+            "thread",
+            "linha de execução"
+          ]
+        },
+        {
+          "senseId": "fiber",
+          "translations": [
+            "fio",
+            "linha"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "linha",
+        "senseId": "fiber",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.108,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "linha",
+        "senseId": "fiber",
+        "semanticScore": 0.9373250776170873,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 25.054,
+        "ranking": [
+          {
+            "senseId": "fiber",
+            "score": 0.9373250776170873
+          },
+          {
+            "senseId": "computing",
+            "score": 0.7199257135890189
+          }
+        ]
+      },
+      "translationMs": 40.3,
+      "totalMs": 65.618,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-022",
+      "sentence": "Choose a web framework for this app.",
+      "selectedText": "framework",
+      "start": 13,
+      "end": 22,
+      "expectedExpression": "framework",
+      "expectedSense": "software",
+      "acceptableTranslationsPtBr": [
+        "framework",
+        "estrutura"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Choose a web framework for this app.",
+      "sentenceTranslated": "Escolha uma estrutura web para este aplicativo.",
+      "originalSpan": [
+        13,
+        22
+      ],
+      "detectedExpression": "framework",
+      "expressionSpan": [
+        13,
+        22
+      ],
+      "tokenSpans": [
+        [
+          13,
+          22
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "software",
+          "translations": [
+            "framework",
+            "estrutura"
+          ]
+        },
+        {
+          "senseId": "structure",
+          "translations": [
+            "estrutura",
+            "arcabouço"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.123,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "estrutura",
+        "senseId": "software",
+        "semanticScore": 0.8592501763244293,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 36.791,
+        "ranking": [
+          {
+            "senseId": "software",
+            "score": 0.8592501763244293
+          },
+          {
+            "senseId": "structure",
+            "score": 0.6618799617834877
+          }
+        ]
+      },
+      "translationMs": 41.692,
+      "totalMs": 78.896,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-023",
+      "sentence": "The building has a wooden framework.",
+      "selectedText": "framework",
+      "start": 26,
+      "end": 35,
+      "expectedExpression": "framework",
+      "expectedSense": "structure",
+      "acceptableTranslationsPtBr": [
+        "estrutura",
+        "arcabouço"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The building has a wooden framework.",
+      "sentenceTranslated": "O edifício tem uma estrutura de madeira.",
+      "originalSpan": [
+        26,
+        35
+      ],
+      "detectedExpression": "framework",
+      "expressionSpan": [
+        26,
+        35
+      ],
+      "tokenSpans": [
+        [
+          26,
+          35
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "software",
+          "translations": [
+            "framework",
+            "estrutura"
+          ]
+        },
+        {
+          "senseId": "structure",
+          "translations": [
+            "estrutura",
+            "arcabouço"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.125,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "estrutura",
+        "senseId": "structure",
+        "semanticScore": 0.8625141731773996,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 12.23,
+        "ranking": [
+          {
+            "senseId": "structure",
+            "score": 0.8625141731773996
+          },
+          {
+            "senseId": "software",
+            "score": 0.6634171777615525
+          }
+        ]
+      },
+      "translationMs": 31.246,
+      "totalMs": 43.787,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-024",
+      "sentence": "A race condition corrupted the counter.",
+      "selectedText": "race condition",
+      "start": 2,
+      "end": 16,
+      "expectedExpression": "race condition",
+      "expectedSense": "concurrency",
+      "acceptableTranslationsPtBr": [
+        "condição de corrida",
+        "condição de disputa"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "A race condition corrupted the counter.",
+      "sentenceTranslated": "Uma condição de corrida corrompeu o contador.",
+      "originalSpan": [
+        2,
+        16
+      ],
+      "detectedExpression": "race condition",
+      "expressionSpan": [
+        2,
+        16
+      ],
+      "tokenSpans": [
+        [
+          2,
+          6
+        ],
+        [
+          7,
+          16
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "concurrency",
+          "translations": [
+            "condição de corrida",
+            "condição de disputa"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "condição de corrida",
+        "senseId": "concurrency",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.08,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "condição de corrida",
+        "senseId": "concurrency",
+        "semanticScore": 0.8141867484694109,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 40.052,
+        "ranking": [
+          {
+            "senseId": "concurrency",
+            "score": 0.8141867484694109
+          }
+        ]
+      },
+      "translationMs": 39.04,
+      "totalMs": 79.319,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-025",
+      "sentence": "Use a lock to protect the shared resource.",
+      "selectedText": "lock",
+      "start": 6,
+      "end": 10,
+      "expectedExpression": "lock",
+      "expectedSense": "mutex",
+      "acceptableTranslationsPtBr": [
+        "bloqueio",
+        "trava",
+        "mutex"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Use a lock to protect the shared resource.",
+      "sentenceTranslated": "Use um bloqueio para proteger o recurso compartilhado.",
+      "originalSpan": [
+        6,
+        10
+      ],
+      "detectedExpression": "lock",
+      "expressionSpan": [
+        6,
+        10
+      ],
+      "tokenSpans": [
+        [
+          6,
+          10
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "mutex",
+          "translations": [
+            "bloqueio",
+            "trava",
+            "mutex"
+          ]
+        },
+        {
+          "senseId": "door",
+          "translations": [
+            "fechadura",
+            "tranca"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "bloqueio",
+        "senseId": "mutex",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.344,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "bloqueio",
+        "senseId": "mutex",
+        "semanticScore": 0.8115209814625957,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 52.349,
+        "ranking": [
+          {
+            "senseId": "mutex",
+            "score": 0.8115209814625957
+          },
+          {
+            "senseId": "door",
+            "score": 0.6559624263727705
+          }
+        ]
+      },
+      "translationMs": 297.193,
+      "totalMs": 350.079,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-026",
+      "sentence": "The door lock is broken.",
+      "selectedText": "lock",
+      "start": 9,
+      "end": 13,
+      "expectedExpression": "lock",
+      "expectedSense": "door",
+      "acceptableTranslationsPtBr": [
+        "fechadura",
+        "tranca"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The door lock is broken.",
+      "sentenceTranslated": "A fechadura da porta está quebrada.",
+      "originalSpan": [
+        9,
+        13
+      ],
+      "detectedExpression": "lock",
+      "expressionSpan": [
+        9,
+        13
+      ],
+      "tokenSpans": [
+        [
+          9,
+          13
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "mutex",
+          "translations": [
+            "bloqueio",
+            "trava",
+            "mutex"
+          ]
+        },
+        {
+          "senseId": "door",
+          "translations": [
+            "fechadura",
+            "tranca"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "fechadura",
+        "senseId": "door",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.098,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "fechadura",
+        "senseId": "door",
+        "semanticScore": 0.8487896545646589,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 17.48,
+        "ranking": [
+          {
+            "senseId": "door",
+            "score": 0.8487896545646589
+          },
+          {
+            "senseId": "mutex",
+            "score": 0.8230902957299079
+          }
+        ]
+      },
+      "translationMs": 30.469,
+      "totalMs": 48.194,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-027",
+      "sentence": "We will deploy the service tonight.",
+      "selectedText": "deploy",
+      "start": 8,
+      "end": 14,
+      "expectedExpression": "deploy",
+      "expectedSense": "publish",
+      "acceptableTranslationsPtBr": [
+        "implantar",
+        "publicar",
+        "implementar"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "We will deploy the service tonight.",
+      "sentenceTranslated": "Nós iremos implantar o serviço hoje à noite.",
+      "originalSpan": [
+        8,
+        14
+      ],
+      "detectedExpression": "deploy",
+      "expressionSpan": [
+        8,
+        14
+      ],
+      "tokenSpans": [
+        [
+          8,
+          14
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "publish",
+          "translations": [
+            "implantar",
+            "publicar",
+            "implante",
+            "implementar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "implantar",
+        "senseId": "publish",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.127,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "implantar",
+        "senseId": "publish",
+        "semanticScore": 0.9015037733563102,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 28.832,
+        "ranking": [
+          {
+            "senseId": "publish",
+            "score": 0.9015037733563102
+          }
+        ]
+      },
+      "translationMs": 34.49,
+      "totalMs": 63.597,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-028",
+      "sentence": "The latest build passed all checks.",
+      "selectedText": "build",
+      "start": 11,
+      "end": 16,
+      "expectedExpression": "build",
+      "expectedSense": "software",
+      "acceptableTranslationsPtBr": [
+        "compilação",
+        "construção"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The latest build passed all checks.",
+      "sentenceTranslated": "A última versão passou todas as verificações.",
+      "originalSpan": [
+        11,
+        16
+      ],
+      "detectedExpression": "build",
+      "expressionSpan": [
+        11,
+        16
+      ],
+      "tokenSpans": [
+        [
+          11,
+          16
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "software",
+          "translations": [
+            "compilação",
+            "compilar",
+            "construir"
+          ]
+        },
+        {
+          "senseId": "construct",
+          "translations": [
+            "construir",
+            "construção"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.123,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "software",
+        "semanticScore": 0.8323158506565161,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 49.941,
+        "ranking": [
+          {
+            "senseId": "software",
+            "score": 0.8323158506565161
+          },
+          {
+            "senseId": "construct",
+            "score": 0.5442447528720327
+          }
+        ]
+      },
+      "translationMs": 40.689,
+      "totalMs": 91.002,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-029",
+      "sentence": "They will build a bridge over the river.",
+      "selectedText": "build",
+      "start": 10,
+      "end": 15,
+      "expectedExpression": "build",
+      "expectedSense": "construct",
+      "acceptableTranslationsPtBr": [
+        "construir"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "They will build a bridge over the river.",
+      "sentenceTranslated": "Eles vão construir uma ponte sobre o rio.",
+      "originalSpan": [
+        10,
+        15
+      ],
+      "detectedExpression": "build",
+      "expressionSpan": [
+        10,
+        15
+      ],
+      "tokenSpans": [
+        [
+          10,
+          15
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "software",
+          "translations": [
+            "compilação",
+            "compilar",
+            "construir"
+          ]
+        },
+        {
+          "senseId": "construct",
+          "translations": [
+            "construir",
+            "construção"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.21,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "construir",
+        "senseId": "construct",
+        "semanticScore": 0.7366738738470174,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 17.645,
+        "ranking": [
+          {
+            "senseId": "construct",
+            "score": 0.7366738738470174
+          },
+          {
+            "senseId": "software",
+            "score": 0.5897001816826386
+          }
+        ]
+      },
+      "translationMs": 113.053,
+      "totalMs": 131.373,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-030",
+      "sentence": "Create a new branch before editing code.",
+      "selectedText": "branch",
+      "start": 13,
+      "end": 19,
+      "expectedExpression": "branch",
+      "expectedSense": "git",
+      "acceptableTranslationsPtBr": [
+        "ramificação",
+        "branch",
+        "ramo"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Create a new branch before editing code.",
+      "sentenceTranslated": "Crie uma nova filial antes de editar o código.",
+      "originalSpan": [
+        13,
+        19
+      ],
+      "detectedExpression": "branch",
+      "expressionSpan": [
+        13,
+        19
+      ],
+      "tokenSpans": [
+        [
+          13,
+          19
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "git",
+          "translations": [
+            "ramificação",
+            "branch",
+            "ramo"
+          ]
+        },
+        {
+          "senseId": "tree",
+          "translations": [
+            "galho",
+            "ramo"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.194,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "git",
+        "semanticScore": 0.8674834306666216,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 45.254,
+        "ranking": [
+          {
+            "senseId": "git",
+            "score": 0.8674834306666216
+          },
+          {
+            "senseId": "tree",
+            "score": 0.8411097574182885
+          }
+        ]
+      },
+      "translationMs": 42.099,
+      "totalMs": 87.903,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-031",
+      "sentence": "The falling branch damaged the car.",
+      "selectedText": "branch",
+      "start": 12,
+      "end": 18,
+      "expectedExpression": "branch",
+      "expectedSense": "tree",
+      "acceptableTranslationsPtBr": [
+        "galho",
+        "ramo"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The falling branch damaged the car.",
+      "sentenceTranslated": "O ramo de queda danificou o carro.",
+      "originalSpan": [
+        12,
+        18
+      ],
+      "detectedExpression": "branch",
+      "expressionSpan": [
+        12,
+        18
+      ],
+      "tokenSpans": [
+        [
+          12,
+          18
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "git",
+          "translations": [
+            "ramificação",
+            "branch",
+            "ramo"
+          ]
+        },
+        {
+          "senseId": "tree",
+          "translations": [
+            "galho",
+            "ramo"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.283,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "ramo",
+        "senseId": "tree",
+        "semanticScore": 0.8862715361166794,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 14.721,
+        "ranking": [
+          {
+            "senseId": "tree",
+            "score": 0.8862715361166794
+          },
+          {
+            "senseId": "git",
+            "score": 0.8162085042272821
+          }
+        ]
+      },
+      "translationMs": 39.531,
+      "totalMs": 54.731,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-032",
+      "sentence": "The next release fixes this bug.",
+      "selectedText": "release",
+      "start": 9,
+      "end": 16,
+      "expectedExpression": "release",
+      "expectedSense": "version",
+      "acceptableTranslationsPtBr": [
+        "versão",
+        "lançamento"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The next release fixes this bug.",
+      "sentenceTranslated": "A próxima versão corrige esse bug.",
+      "originalSpan": [
+        9,
+        16
+      ],
+      "detectedExpression": "release",
+      "expressionSpan": [
+        9,
+        16
+      ],
+      "tokenSpans": [
+        [
+          9,
+          16
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "version",
+          "translations": [
+            "versão",
+            "lançamento",
+            "lançar"
+          ]
+        },
+        {
+          "senseId": "free",
+          "translations": [
+            "libertar",
+            "soltar",
+            "liberação"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "versão",
+        "senseId": "version",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.107,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "versão",
+        "senseId": "version",
+        "semanticScore": 0.826424118815627,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 41.212,
+        "ranking": [
+          {
+            "senseId": "version",
+            "score": 0.826424118815627
+          },
+          {
+            "senseId": "free",
+            "score": 0.37508866521356143
+          }
+        ]
+      },
+      "translationMs": 32.928,
+      "totalMs": 74.419,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-033",
+      "sentence": "They will release the prisoner tomorrow.",
+      "selectedText": "release",
+      "start": 10,
+      "end": 17,
+      "expectedExpression": "release",
+      "expectedSense": "free",
+      "acceptableTranslationsPtBr": [
+        "libertar",
+        "soltar"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "They will release the prisoner tomorrow.",
+      "sentenceTranslated": "Eles vão liberar o prisioneiro amanhã.",
+      "originalSpan": [
+        10,
+        17
+      ],
+      "detectedExpression": "release",
+      "expressionSpan": [
+        10,
+        17
+      ],
+      "tokenSpans": [
+        [
+          10,
+          17
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "version",
+          "translations": [
+            "versão",
+            "lançamento",
+            "lançar"
+          ]
+        },
+        {
+          "senseId": "free",
+          "translations": [
+            "libertar",
+            "soltar",
+            "liberação"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.17,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "free",
+        "semanticScore": 0.73984346632341,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 14.244,
+        "ranking": [
+          {
+            "senseId": "free",
+            "score": 0.73984346632341
+          },
+          {
+            "senseId": "version",
+            "score": 0.5872005830718845
+          }
+        ]
+      },
+      "translationMs": 46.683,
+      "totalMs": 61.377,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-034",
+      "sentence": "Save the current state before closing.",
+      "selectedText": "state",
+      "start": 17,
+      "end": 22,
+      "expectedExpression": "state",
+      "expectedSense": "condition",
+      "acceptableTranslationsPtBr": [
+        "estado"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Save the current state before closing.",
+      "sentenceTranslated": "Salve o estado atual antes de fechar.",
+      "originalSpan": [
+        17,
+        22
+      ],
+      "detectedExpression": "state",
+      "expressionSpan": [
+        17,
+        22
+      ],
+      "tokenSpans": [
+        [
+          17,
+          22
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "condition",
+          "translations": [
+            "estado"
+          ]
+        },
+        {
+          "senseId": "territory",
+          "translations": [
+            "estado"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.2,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "estado",
+        "senseId": "condition",
+        "semanticScore": 0.8916436451604813,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 40.572,
+        "ranking": [
+          {
+            "senseId": "condition",
+            "score": 0.8916436451604813
+          },
+          {
+            "senseId": "territory",
+            "score": 0.7031389385717356
+          }
+        ]
+      },
+      "translationMs": 32.409,
+      "totalMs": 73.451,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-035",
+      "sentence": "Texas is a southern state.",
+      "selectedText": "state",
+      "start": 20,
+      "end": 25,
+      "expectedExpression": "state",
+      "expectedSense": "territory",
+      "acceptableTranslationsPtBr": [
+        "estado"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Texas is a southern state.",
+      "sentenceTranslated": "O Texas é um estado do sul.",
+      "originalSpan": [
+        20,
+        25
+      ],
+      "detectedExpression": "state",
+      "expressionSpan": [
+        20,
+        25
+      ],
+      "tokenSpans": [
+        [
+          20,
+          25
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "condition",
+          "translations": [
+            "estado"
+          ]
+        },
+        {
+          "senseId": "territory",
+          "translations": [
+            "estado"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.081,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "estado",
+        "senseId": "territory",
+        "semanticScore": 0.6694184368976359,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 249.967,
+        "ranking": [
+          {
+            "senseId": "territory",
+            "score": 0.6694184368976359
+          },
+          {
+            "senseId": "condition",
+            "score": 0.5264701542754178
+          }
+        ]
+      },
+      "translationMs": 30.972,
+      "totalMs": 281.238,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "idiom-036",
+      "sentence": "The values are calculated on the fly.",
+      "selectedText": "on the fly",
+      "start": 26,
+      "end": 36,
+      "expectedExpression": "on the fly",
+      "expectedSense": "dynamic",
+      "acceptableTranslationsPtBr": [
+        "dinamicamente",
+        "em tempo real",
+        "na hora"
+      ],
+      "category": "idiom",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The values are calculated on the fly.",
+      "sentenceTranslated": "Os valores são calculados na mosca.",
+      "originalSpan": [
+        26,
+        36
+      ],
+      "detectedExpression": "on the fly",
+      "expressionSpan": [
+        26,
+        36
+      ],
+      "tokenSpans": [
+        [
+          26,
+          28
+        ],
+        [
+          29,
+          32
+        ],
+        [
+          33,
+          36
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "dynamic",
+          "translations": [
+            "dinamicamente",
+            "em tempo real",
+            "na hora"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.135,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "dynamic",
+        "semanticScore": 0.5328537983931146,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 63.35,
+        "ranking": [
+          {
+            "senseId": "dynamic",
+            "score": 0.5328537983931146
+          }
+        ]
+      },
+      "translationMs": 44.943,
+      "totalMs": 108.822,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "idiom-037",
+      "sentence": "The software works out of the box.",
+      "selectedText": "out of the box",
+      "start": 19,
+      "end": 33,
+      "expectedExpression": "out of the box",
+      "expectedSense": "ready",
+      "acceptableTranslationsPtBr": [
+        "pronto para uso",
+        "por padrão",
+        "de fábrica"
+      ],
+      "category": "idiom",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The software works out of the box.",
+      "sentenceTranslated": "O software funciona fora da caixa.",
+      "originalSpan": [
+        19,
+        33
+      ],
+      "detectedExpression": "out of the box",
+      "expressionSpan": [
+        19,
+        33
+      ],
+      "tokenSpans": [
+        [
+          19,
+          22
+        ],
+        [
+          23,
+          25
+        ],
+        [
+          26,
+          29
+        ],
+        [
+          30,
+          33
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "ready",
+          "translations": [
+            "pronto para uso",
+            "por padrão",
+            "de fábrica"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.082,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "ready",
+        "semanticScore": 0.5551984329646493,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 71.734,
+        "ranking": [
+          {
+            "senseId": "ready",
+            "score": 0.5551984329646493
+          }
+        ]
+      },
+      "translationMs": 40.465,
+      "totalMs": 112.433,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "idiom-038",
+      "sentence": "Several jobs are at stake.",
+      "selectedText": "at stake",
+      "start": 17,
+      "end": 25,
+      "expectedExpression": "at stake",
+      "expectedSense": "risk",
+      "acceptableTranslationsPtBr": [
+        "em jogo",
+        "em risco"
+      ],
+      "category": "idiom",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Several jobs are at stake.",
+      "sentenceTranslated": "Vários trabalhos estão em jogo.",
+      "originalSpan": [
+        17,
+        25
+      ],
+      "detectedExpression": "at stake",
+      "expressionSpan": [
+        17,
+        25
+      ],
+      "tokenSpans": [
+        [
+          17,
+          19
+        ],
+        [
+          20,
+          25
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "risk",
+          "translations": [
+            "em jogo",
+            "em risco"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "em jogo",
+        "senseId": "risk",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.138,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "em jogo",
+        "senseId": "risk",
+        "semanticScore": 0.7396296924005136,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 44.586,
+        "ranking": [
+          {
+            "senseId": "risk",
+            "score": 0.7396296924005136
+          }
+        ]
+      },
+      "translationMs": 31.685,
+      "totalMs": 76.579,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "idiom-039",
+      "sentence": "By and large, customers like the update.",
+      "selectedText": "By and large",
+      "start": 0,
+      "end": 12,
+      "expectedExpression": "by and large",
+      "expectedSense": "generally",
+      "acceptableTranslationsPtBr": [
+        "em geral",
+        "de modo geral"
+      ],
+      "category": "idiom",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "By and large, customers like the update.",
+      "sentenceTranslated": "Por e grandes, clientes gostam da atualização.",
+      "originalSpan": [
+        0,
+        12
+      ],
+      "detectedExpression": "by and large",
+      "expressionSpan": [
+        0,
+        12
+      ],
+      "tokenSpans": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          7,
+          12
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "generally",
+          "translations": [
+            "em geral",
+            "de modo geral"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.633,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "generally",
+        "semanticScore": 0.7387484307162553,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 55.76,
+        "ranking": [
+          {
+            "senseId": "generally",
+            "score": 0.7387484307162553
+          }
+        ]
+      },
+      "translationMs": 38.97,
+      "totalMs": 95.764,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "idiom-040",
+      "sentence": "He criticized the laissez-faire approach.",
+      "selectedText": "laissez-faire",
+      "start": 18,
+      "end": 31,
+      "expectedExpression": "laissez-faire",
+      "expectedSense": "nonintervention",
+      "acceptableTranslationsPtBr": [
+        "laissez-faire",
+        "não intervenção"
+      ],
+      "category": "idiom",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "He criticized the laissez-faire approach.",
+      "sentenceTranslated": "Ele criticou a abordagem Laissez-Faire.",
+      "originalSpan": [
+        18,
+        31
+      ],
+      "detectedExpression": "laissez-faire",
+      "expressionSpan": [
+        18,
+        31
+      ],
+      "tokenSpans": [
+        [
+          18,
+          31
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "nonintervention",
+          "translations": [
+            "laissez-faire",
+            "não intervenção"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "laissez-faire",
+        "senseId": "nonintervention",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.105,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "laissez-faire",
+        "senseId": "nonintervention",
+        "semanticScore": 0.8340548974383971,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 41.98,
+        "ranking": [
+          {
+            "senseId": "nonintervention",
+            "score": 0.8340548974383971
+          }
+        ]
+      },
+      "translationMs": 66.299,
+      "totalMs": 108.588,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "inflection-041",
+      "sentence": "She gave up smoking last year.",
+      "selectedText": "gave",
+      "start": 4,
+      "end": 8,
+      "expectedExpression": "give up",
+      "expectedSense": "stop",
+      "acceptableTranslationsPtBr": [
+        "desistiu",
+        "abandonou",
+        "desistir"
+      ],
+      "category": "inflection",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "She gave up smoking last year.",
+      "sentenceTranslated": "Ela desistiu de fumar no ano passado.",
+      "originalSpan": [
+        4,
+        8
+      ],
+      "detectedExpression": "give up",
+      "expressionSpan": [
+        4,
+        11
+      ],
+      "tokenSpans": [
+        [
+          4,
+          8
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "stop",
+          "translations": [
+            "desistir",
+            "abandonar",
+            "desistiu",
+            "desisti"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "desistiu",
+        "senseId": "stop",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.63,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "desistiu",
+        "senseId": "stop",
+        "semanticScore": 0.6479896635213875,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 26.918,
+        "ranking": [
+          {
+            "senseId": "stop",
+            "score": 0.6479896635213875
+          }
+        ]
+      },
+      "translationMs": 40.564,
+      "totalMs": 68.373,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "inflection-042",
+      "sentence": "He looks after his younger brother.",
+      "selectedText": "looks",
+      "start": 3,
+      "end": 8,
+      "expectedExpression": "look after",
+      "expectedSense": "care",
+      "acceptableTranslationsPtBr": [
+        "cuida",
+        "cuidar",
+        "cuidar de"
+      ],
+      "category": "inflection",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "He looks after his younger brother.",
+      "sentenceTranslated": "Ele cuida de seu irmão mais novo.",
+      "originalSpan": [
+        3,
+        8
+      ],
+      "detectedExpression": "look after",
+      "expressionSpan": [
+        3,
+        14
+      ],
+      "tokenSpans": [
+        [
+          3,
+          8
+        ],
+        [
+          9,
+          14
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "care",
+          "translations": [
+            "cuidar",
+            "cuidar de"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "cuida",
+        "senseId": "care",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.124,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "cuida",
+        "senseId": "care",
+        "semanticScore": 0.7316467029347252,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 35.98,
+        "ranking": [
+          {
+            "senseId": "care",
+            "score": 0.7316467029347252
+          }
+        ]
+      },
+      "translationMs": 38.563,
+      "totalMs": 74.815,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "inflection-043",
+      "sentence": "We set the new router up yesterday.",
+      "selectedText": "set",
+      "start": 3,
+      "end": 6,
+      "expectedExpression": "set up",
+      "expectedSense": "establish",
+      "acceptableTranslationsPtBr": [
+        "configuramos",
+        "configurar",
+        "montar"
+      ],
+      "category": "inflection",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "We set the new router up yesterday.",
+      "sentenceTranslated": "Nós definimos o novo roteador acima ontem.",
+      "originalSpan": [
+        3,
+        6
+      ],
+      "detectedExpression": "set up",
+      "expressionSpan": [
+        3,
+        24
+      ],
+      "tokenSpans": [
+        [
+          3,
+          6
+        ],
+        [
+          22,
+          24
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "establish",
+          "translations": [
+            "configurar",
+            "montar",
+            "criar",
+            "instalar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.099,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "establish",
+        "semanticScore": 0.6762562509129673,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 30.457,
+        "ranking": [
+          {
+            "senseId": "establish",
+            "score": 0.6762562509129673
+          }
+        ]
+      },
+      "translationMs": 40.285,
+      "totalMs": 71.013,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "inflection-044",
+      "sentence": "She looked the number up online.",
+      "selectedText": "looked",
+      "start": 4,
+      "end": 10,
+      "expectedExpression": "look up",
+      "expectedSense": "search",
+      "acceptableTranslationsPtBr": [
+        "consultou",
+        "pesquisou",
+        "procurou",
+        "consultar"
+      ],
+      "category": "inflection",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "She looked the number up online.",
+      "sentenceTranslated": "Ela olhou o número online.",
+      "originalSpan": [
+        4,
+        10
+      ],
+      "detectedExpression": "look up",
+      "expressionSpan": [
+        4,
+        24
+      ],
+      "tokenSpans": [
+        [
+          4,
+          10
+        ],
+        [
+          22,
+          24
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "search",
+          "translations": [
+            "pesquisar",
+            "consultar",
+            "procurar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.097,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "search",
+        "semanticScore": 0.681874789912262,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 27.89,
+        "ranking": [
+          {
+            "senseId": "search",
+            "score": 0.681874789912262
+          }
+        ]
+      },
+      "translationMs": 34.433,
+      "totalMs": 62.543,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "inflection-045",
+      "sentence": "They gave the old furniture away.",
+      "selectedText": "gave",
+      "start": 5,
+      "end": 9,
+      "expectedExpression": "give away",
+      "expectedSense": "donate",
+      "acceptableTranslationsPtBr": [
+        "doaram",
+        "doar",
+        "dar"
+      ],
+      "category": "inflection",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "They gave the old furniture away.",
+      "sentenceTranslated": "Eles deram a mobília antiga longe.",
+      "originalSpan": [
+        5,
+        9
+      ],
+      "detectedExpression": "give away",
+      "expressionSpan": [
+        5,
+        32
+      ],
+      "tokenSpans": [
+        [
+          5,
+          9
+        ],
+        [
+          28,
+          32
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "donate",
+          "translations": [
+            "doar",
+            "distribuir",
+            "dar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.156,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "donate",
+        "semanticScore": 0.7023285154763591,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 31.979,
+        "ranking": [
+          {
+            "senseId": "donate",
+            "score": 0.7023285154763591
+          }
+        ]
+      },
+      "translationMs": 35.116,
+      "totalMs": 67.439,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "negation-046",
+      "sentence": "Do not give up now.",
+      "selectedText": "give",
+      "start": 7,
+      "end": 11,
+      "expectedExpression": "give up",
+      "expectedSense": "stop",
+      "acceptableTranslationsPtBr": [
+        "desistir",
+        "desista",
+        "abandonar"
+      ],
+      "category": "negation",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Do not give up now.",
+      "sentenceTranslated": "Não desista agora.",
+      "originalSpan": [
+        7,
+        11
+      ],
+      "detectedExpression": "give up",
+      "expressionSpan": [
+        7,
+        14
+      ],
+      "tokenSpans": [
+        [
+          7,
+          11
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "stop",
+          "translations": [
+            "desistir",
+            "abandonar",
+            "desistiu",
+            "desisti"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "desista",
+        "senseId": "stop",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.094,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "desista",
+        "senseId": "stop",
+        "semanticScore": 0.7428698100727896,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 29.017,
+        "ranking": [
+          {
+            "senseId": "stop",
+            "score": 0.7428698100727896
+          }
+        ]
+      },
+      "translationMs": 24.847,
+      "totalMs": 54.116,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "negation-047",
+      "sentence": "We did not run the program.",
+      "selectedText": "run",
+      "start": 11,
+      "end": 14,
+      "expectedExpression": "run",
+      "expectedSense": "execute",
+      "acceptableTranslationsPtBr": [
+        "executar",
+        "rodar",
+        "executamos"
+      ],
+      "category": "negation",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "We did not run the program.",
+      "sentenceTranslated": "Nós não executamos o programa.",
+      "originalSpan": [
+        11,
+        14
+      ],
+      "detectedExpression": "run",
+      "expressionSpan": [
+        11,
+        14
+      ],
+      "tokenSpans": [
+        [
+          11,
+          14
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "execute",
+          "translations": [
+            "executar",
+            "rodar"
+          ]
+        },
+        {
+          "senseId": "jog",
+          "translations": [
+            "correr",
+            "corrida"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "executamos",
+        "senseId": "execute",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.108,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "executamos",
+        "senseId": "execute",
+        "semanticScore": 0.6051087749155225,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 15.873,
+        "ranking": [
+          {
+            "senseId": "execute",
+            "score": 0.6051087749155225
+          },
+          {
+            "senseId": "jog",
+            "score": 0.5797371168359533
+          }
+        ]
+      },
+      "translationMs": 25.771,
+      "totalMs": 41.893,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "punctuation-048",
+      "sentence": "Mr. Smith said, \"Give up the chase.\"",
+      "selectedText": "Give",
+      "start": 17,
+      "end": 21,
+      "expectedExpression": "give up",
+      "expectedSense": "stop",
+      "acceptableTranslationsPtBr": [
+        "desistir",
+        "abandonar",
+        "desista"
+      ],
+      "category": "punctuation",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Mr. Smith said, \"Give up the chase.\"",
+      "sentenceTranslated": "Smith disse: \"Desista da perseguição\".",
+      "originalSpan": [
+        17,
+        21
+      ],
+      "detectedExpression": "give up",
+      "expressionSpan": [
+        17,
+        24
+      ],
+      "tokenSpans": [
+        [
+          17,
+          21
+        ],
+        [
+          22,
+          24
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "stop",
+          "translations": [
+            "desistir",
+            "abandonar",
+            "desistiu",
+            "desisti"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "desista",
+        "senseId": "stop",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.109,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "desista",
+        "senseId": "stop",
+        "semanticScore": 0.6626424982612279,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 26.685,
+        "ranking": [
+          {
+            "senseId": "stop",
+            "score": 0.6626424982612279
+          }
+        ]
+      },
+      "translationMs": 54.483,
+      "totalMs": 81.406,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "punctuation-049",
+      "sentence": "The tool, e.g. a framework, can help.",
+      "selectedText": "framework",
+      "start": 17,
+      "end": 26,
+      "expectedExpression": "framework",
+      "expectedSense": "software",
+      "acceptableTranslationsPtBr": [
+        "framework",
+        "estrutura"
+      ],
+      "category": "punctuation",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The tool, e.g. a framework, can help.",
+      "sentenceTranslated": "A ferramenta, e. uma estrutura, pode ajudar.",
+      "originalSpan": [
+        17,
+        26
+      ],
+      "detectedExpression": "framework",
+      "expressionSpan": [
+        17,
+        26
+      ],
+      "tokenSpans": [
+        [
+          17,
+          26
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "software",
+          "translations": [
+            "framework",
+            "estrutura"
+          ]
+        },
+        {
+          "senseId": "structure",
+          "translations": [
+            "estrutura",
+            "arcabouço"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.081,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "estrutura",
+        "senseId": "software",
+        "semanticScore": 0.7804613391773554,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 15.559,
+        "ranking": [
+          {
+            "senseId": "software",
+            "score": 0.7804613391773554
+          },
+          {
+            "senseId": "structure",
+            "score": 0.6853432500073361
+          }
+        ]
+      },
+      "translationMs": 28.632,
+      "totalMs": 44.404,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "punctuation-050",
+      "sentence": "Please give\nup this dangerous habit.",
+      "selectedText": "give",
+      "start": 7,
+      "end": 11,
+      "expectedExpression": "give up",
+      "expectedSense": "stop",
+      "acceptableTranslationsPtBr": [
+        "desistir",
+        "abandonar"
+      ],
+      "category": "punctuation",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Please give\nup this dangerous habit.",
+      "sentenceTranslated": "Por favor, desista deste hábito perigoso.",
+      "originalSpan": [
+        7,
+        11
+      ],
+      "detectedExpression": "give up",
+      "expressionSpan": [
+        7,
+        14
+      ],
+      "tokenSpans": [
+        [
+          7,
+          11
+        ],
+        [
+          12,
+          14
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "stop",
+          "translations": [
+            "desistir",
+            "abandonar",
+            "desistiu",
+            "desisti"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "desista",
+        "senseId": "stop",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.232,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "desista",
+        "senseId": "stop",
+        "semanticScore": 0.6730161581831622,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 26.339,
+        "ranking": [
+          {
+            "senseId": "stop",
+            "score": 0.6730161581831622
+          }
+        ]
+      },
+      "translationMs": 37.221,
+      "totalMs": 63.927,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-051",
+      "sentence": "This suitcase is surprisingly light.",
+      "selectedText": "light",
+      "start": 30,
+      "end": 35,
+      "expectedExpression": "light",
+      "expectedSense": "lightweight",
+      "acceptableTranslationsPtBr": [
+        "leve"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "This suitcase is surprisingly light.",
+      "sentenceTranslated": "Esta mala é surpreendentemente leve.",
+      "originalSpan": [
+        30,
+        35
+      ],
+      "detectedExpression": "light",
+      "expressionSpan": [
+        30,
+        35
+      ],
+      "tokenSpans": [
+        [
+          30,
+          35
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "illumination",
+          "translations": [
+            "luz"
+          ]
+        },
+        {
+          "senseId": "lightweight",
+          "translations": [
+            "leve",
+            "leve em recursos"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "leve",
+        "senseId": "lightweight",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.167,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "leve",
+        "senseId": "lightweight",
+        "semanticScore": 0.7163749032130744,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 15.167,
+        "ranking": [
+          {
+            "senseId": "lightweight",
+            "score": 0.7163749032130744
+          },
+          {
+            "senseId": "illumination",
+            "score": 0.5643525965584748
+          }
+        ]
+      },
+      "translationMs": 34.393,
+      "totalMs": 49.991,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-052",
+      "sentence": "Sunlight is a natural source of light.",
+      "selectedText": "light",
+      "start": 32,
+      "end": 37,
+      "expectedExpression": "light",
+      "expectedSense": "illumination",
+      "acceptableTranslationsPtBr": [
+        "luz"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Sunlight is a natural source of light.",
+      "sentenceTranslated": "A luz do sol é uma fonte natural de luz.",
+      "originalSpan": [
+        32,
+        37
+      ],
+      "detectedExpression": "light",
+      "expressionSpan": [
+        32,
+        37
+      ],
+      "tokenSpans": [
+        [
+          32,
+          37
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "illumination",
+          "translations": [
+            "luz"
+          ]
+        },
+        {
+          "senseId": "lightweight",
+          "translations": [
+            "leve",
+            "leve em recursos"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "luz",
+        "senseId": "illumination",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.215,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "luz",
+        "senseId": "illumination",
+        "semanticScore": 0.7451463367183482,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 13.683,
+        "ranking": [
+          {
+            "senseId": "illumination",
+            "score": 0.7451463367183482
+          },
+          {
+            "senseId": "lightweight",
+            "score": 0.644473235660641
+          }
+        ]
+      },
+      "translationMs": 40.204,
+      "totalMs": 54.569,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-053",
+      "sentence": "The bank refused the loan.",
+      "selectedText": "bank",
+      "start": 4,
+      "end": 8,
+      "expectedExpression": "bank",
+      "expectedSense": "financial",
+      "acceptableTranslationsPtBr": [
+        "banco"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The bank refused the loan.",
+      "sentenceTranslated": "O banco recusou o empréstimo.",
+      "originalSpan": [
+        4,
+        8
+      ],
+      "detectedExpression": "bank",
+      "expressionSpan": [
+        4,
+        8
+      ],
+      "tokenSpans": [
+        [
+          4,
+          8
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "financial",
+          "translations": [
+            "banco"
+          ]
+        },
+        {
+          "senseId": "river_edge",
+          "translations": [
+            "margem",
+            "beira"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "banco",
+        "senseId": "financial",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.197,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "banco",
+        "senseId": "financial",
+        "semanticScore": 0.8569218245548204,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 19.442,
+        "ranking": [
+          {
+            "senseId": "financial",
+            "score": 0.8569218245548204
+          },
+          {
+            "senseId": "river_edge",
+            "score": 0.6027842468412354
+          }
+        ]
+      },
+      "translationMs": 35.82,
+      "totalMs": 55.605,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-054",
+      "sentence": "Willows grow along the bank of the river.",
+      "selectedText": "bank",
+      "start": 23,
+      "end": 27,
+      "expectedExpression": "bank",
+      "expectedSense": "river_edge",
+      "acceptableTranslationsPtBr": [
+        "margem",
+        "beira"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Willows grow along the bank of the river.",
+      "sentenceTranslated": "Willows crescem ao longo da margem do rio.",
+      "originalSpan": [
+        23,
+        27
+      ],
+      "detectedExpression": "bank",
+      "expressionSpan": [
+        23,
+        27
+      ],
+      "tokenSpans": [
+        [
+          23,
+          27
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "financial",
+          "translations": [
+            "banco"
+          ]
+        },
+        {
+          "senseId": "river_edge",
+          "translations": [
+            "margem",
+            "beira"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "margem",
+        "senseId": "river_edge",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.123,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "margem",
+        "senseId": "river_edge",
+        "semanticScore": 0.7968043125524199,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 16.302,
+        "ranking": [
+          {
+            "senseId": "river_edge",
+            "score": 0.7968043125524199
+          },
+          {
+            "senseId": "financial",
+            "score": 0.6424538958460873
+          }
+        ]
+      },
+      "translationMs": 40.041,
+      "totalMs": 56.828,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-055",
+      "sentence": "A bat sleeps upside down.",
+      "selectedText": "bat",
+      "start": 2,
+      "end": 5,
+      "expectedExpression": "bat",
+      "expectedSense": "animal",
+      "acceptableTranslationsPtBr": [
+        "morcego"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "A bat sleeps upside down.",
+      "sentenceTranslated": "Um morcego dorme de cabeça para baixo.",
+      "originalSpan": [
+        2,
+        5
+      ],
+      "detectedExpression": "bat",
+      "expressionSpan": [
+        2,
+        5
+      ],
+      "tokenSpans": [
+        [
+          2,
+          5
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "animal",
+          "translations": [
+            "morcego"
+          ]
+        },
+        {
+          "senseId": "sport",
+          "translations": [
+            "taco"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "morcego",
+        "senseId": "animal",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.09,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "morcego",
+        "senseId": "animal",
+        "semanticScore": 0.9188645597589571,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 40.195,
+        "ranking": [
+          {
+            "senseId": "animal",
+            "score": 0.9188645597589571
+          },
+          {
+            "senseId": "sport",
+            "score": 0.824076054111647
+          }
+        ]
+      },
+      "translationMs": 35.963,
+      "totalMs": 76.375,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "polysemy-056",
+      "sentence": "He hit the ball with a bat.",
+      "selectedText": "bat",
+      "start": 23,
+      "end": 26,
+      "expectedExpression": "bat",
+      "expectedSense": "sport",
+      "acceptableTranslationsPtBr": [
+        "taco"
+      ],
+      "category": "polysemy",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "He hit the ball with a bat.",
+      "sentenceTranslated": "Ele bateu na bola com um morcego.",
+      "originalSpan": [
+        23,
+        26
+      ],
+      "detectedExpression": "bat",
+      "expressionSpan": [
+        23,
+        26
+      ],
+      "tokenSpans": [
+        [
+          23,
+          26
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "animal",
+          "translations": [
+            "morcego"
+          ]
+        },
+        {
+          "senseId": "sport",
+          "translations": [
+            "taco"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "morcego",
+        "senseId": "animal",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.208,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "sport",
+        "semanticScore": 0.9035983226672362,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 13.157,
+        "ranking": [
+          {
+            "senseId": "sport",
+            "score": 0.9035983226672362
+          },
+          {
+            "senseId": "animal",
+            "score": 0.8322938733307838
+          }
+        ]
+      },
+      "translationMs": 40.047,
+      "totalMs": 53.682,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "phrasal_verb-057",
+      "sentence": "Please give the ticket to the driver.",
+      "selectedText": "give",
+      "start": 7,
+      "end": 11,
+      "expectedExpression": "give",
+      "expectedSense": "handover",
+      "acceptableTranslationsPtBr": [
+        "dar",
+        "entregar",
+        "dê"
+      ],
+      "category": "phrasal_verb",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Please give the ticket to the driver.",
+      "sentenceTranslated": "Por favor, dê o ingresso para o motorista.",
+      "originalSpan": [
+        7,
+        11
+      ],
+      "detectedExpression": "give",
+      "expressionSpan": [
+        7,
+        11
+      ],
+      "tokenSpans": [
+        [
+          7,
+          11
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "handover",
+          "translations": [
+            "dar",
+            "entregar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.087,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Sentido experimental; alinhamento incerto",
+        "shortTranslation": null,
+        "senseId": "handover",
+        "semanticScore": 0.6957968880374593,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 28.686,
+        "ranking": [
+          {
+            "senseId": "handover",
+            "score": 0.6957968880374593
+          }
+        ]
+      },
+      "translationMs": 38.621,
+      "totalMs": 67.565,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-058",
+      "sentence": "We can set up a local database.",
+      "selectedText": "set up",
+      "start": 7,
+      "end": 13,
+      "expectedExpression": "set up",
+      "expectedSense": "establish",
+      "acceptableTranslationsPtBr": [
+        "configurar",
+        "montar",
+        "criar"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "We can set up a local database.",
+      "sentenceTranslated": "Podemos configurar um banco de dados local.",
+      "originalSpan": [
+        7,
+        13
+      ],
+      "detectedExpression": "set up",
+      "expressionSpan": [
+        7,
+        13
+      ],
+      "tokenSpans": [
+        [
+          7,
+          10
+        ],
+        [
+          11,
+          13
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "establish",
+          "translations": [
+            "configurar",
+            "montar",
+            "criar",
+            "instalar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "configurar",
+        "senseId": "establish",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.121,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "configurar",
+        "senseId": "establish",
+        "semanticScore": 0.8425190121048197,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 21.008,
+        "ranking": [
+          {
+            "senseId": "establish",
+            "score": 0.8425190121048197
+          }
+        ]
+      },
+      "translationMs": 33.635,
+      "totalMs": 54.909,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "technical-059",
+      "sentence": "The race condition disappears with synchronization.",
+      "selectedText": "race condition",
+      "start": 4,
+      "end": 18,
+      "expectedExpression": "race condition",
+      "expectedSense": "concurrency",
+      "acceptableTranslationsPtBr": [
+        "condição de corrida",
+        "condição de disputa"
+      ],
+      "category": "technical",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The race condition disappears with synchronization.",
+      "sentenceTranslated": "A condição de corrida desaparece com a sincronização.",
+      "originalSpan": [
+        4,
+        18
+      ],
+      "detectedExpression": "race condition",
+      "expressionSpan": [
+        4,
+        18
+      ],
+      "tokenSpans": [
+        [
+          4,
+          8
+        ],
+        [
+          9,
+          18
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "concurrency",
+          "translations": [
+            "condição de corrida",
+            "condição de disputa"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "condição de corrida",
+        "senseId": "concurrency",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.071,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "condição de corrida",
+        "senseId": "concurrency",
+        "semanticScore": 0.8649844993186092,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 28.685,
+        "ranking": [
+          {
+            "senseId": "concurrency",
+            "score": 0.8649844993186092
+          }
+        ]
+      },
+      "translationMs": 41.669,
+      "totalMs": 70.609,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "idiom-060",
+      "sentence": "Their safety is at stake here.",
+      "selectedText": "at stake",
+      "start": 16,
+      "end": 24,
+      "expectedExpression": "at stake",
+      "expectedSense": "risk",
+      "acceptableTranslationsPtBr": [
+        "em jogo",
+        "em risco"
+      ],
+      "category": "idiom",
+      "expectedAbstention": false,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Their safety is at stake here.",
+      "sentenceTranslated": "Sua segurança está em jogo aqui.",
+      "originalSpan": [
+        16,
+        24
+      ],
+      "detectedExpression": "at stake",
+      "expressionSpan": [
+        16,
+        24
+      ],
+      "tokenSpans": [
+        [
+          16,
+          18
+        ],
+        [
+          19,
+          24
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "risk",
+          "translations": [
+            "em jogo",
+            "em risco"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "em jogo",
+        "senseId": "risk",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.223,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "em jogo",
+        "senseId": "risk",
+        "semanticScore": 0.7470221419682541,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 100.967,
+        "ranking": [
+          {
+            "senseId": "risk",
+            "score": 0.7470221419682541
+          }
+        ]
+      },
+      "translationMs": 33.643,
+      "totalMs": 135.248,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "abstain-061",
+      "sentence": "The word bank has several meanings.",
+      "selectedText": "bank",
+      "start": 9,
+      "end": 13,
+      "expectedExpression": "bank",
+      "expectedSense": null,
+      "acceptableTranslationsPtBr": [],
+      "category": "abstain",
+      "expectedAbstention": true,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The word bank has several meanings.",
+      "sentenceTranslated": "O banco de palavras tem vários significados.",
+      "originalSpan": [
+        9,
+        13
+      ],
+      "detectedExpression": "bank",
+      "expressionSpan": [
+        9,
+        13
+      ],
+      "tokenSpans": [
+        [
+          9,
+          13
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "financial",
+          "translations": [
+            "banco"
+          ]
+        },
+        {
+          "senseId": "river_edge",
+          "translations": [
+            "margem",
+            "beira"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "banco",
+        "senseId": "financial",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.115,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "banco",
+        "senseId": "financial",
+        "semanticScore": 0.82734167338086,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 18.867,
+        "ranking": [
+          {
+            "senseId": "financial",
+            "score": 0.82734167338086
+          },
+          {
+            "senseId": "river_edge",
+            "score": 0.7122536307699527
+          }
+        ]
+      },
+      "translationMs": 40.094,
+      "totalMs": 59.382,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "abstain-062",
+      "sentence": "The invented word florptastic is unclear.",
+      "selectedText": "florptastic",
+      "start": 18,
+      "end": 29,
+      "expectedExpression": "florptastic",
+      "expectedSense": null,
+      "acceptableTranslationsPtBr": [],
+      "category": "abstain",
+      "expectedAbstention": true,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "The invented word florptastic is unclear.",
+      "sentenceTranslated": "A palavra inventada Florptestic não é clara.",
+      "originalSpan": [
+        18,
+        29
+      ],
+      "detectedExpression": "florptastic",
+      "expressionSpan": [
+        18,
+        29
+      ],
+      "tokenSpans": [
+        [
+          18,
+          29
+        ]
+      ],
+      "candidateTranslations": [],
+      "A": {
+        "mode": "A",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Nenhuma âncora única; revisão necessária"
+        ],
+        "decisionMs": 0.032,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 20.533,
+        "ranking": []
+      },
+      "translationMs": 57.047,
+      "totalMs": 77.915,
+      "cacheHit": false,
+      "correctA": true,
+      "correctB": true,
+      "expressionCorrect": true
+    },
+    {
+      "id": "abstain-063",
+      "sentence": "He said charge without any context.",
+      "selectedText": "charge",
+      "start": 8,
+      "end": 14,
+      "expectedExpression": "charge",
+      "expectedSense": null,
+      "acceptableTranslationsPtBr": [],
+      "category": "abstain",
+      "expectedAbstention": true,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "He said charge without any context.",
+      "sentenceTranslated": "Ele disse cobrança sem qualquer contexto.",
+      "originalSpan": [
+        8,
+        14
+      ],
+      "detectedExpression": "charge",
+      "expressionSpan": [
+        8,
+        14
+      ],
+      "tokenSpans": [
+        [
+          8,
+          14
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "fee",
+          "translations": [
+            "cobrança",
+            "taxa",
+            "cobrar"
+          ]
+        },
+        {
+          "senseId": "electricity",
+          "translations": [
+            "carga",
+            "carregar"
+          ]
+        },
+        {
+          "senseId": "accusation",
+          "translations": [
+            "acusação",
+            "acusar"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "cobrança",
+        "senseId": "fee",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.141,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "cobrança",
+        "senseId": "fee",
+        "semanticScore": 0.7384359707355496,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 15.467,
+        "ranking": [
+          {
+            "senseId": "fee",
+            "score": 0.7384359707355496
+          },
+          {
+            "senseId": "electricity",
+            "score": 0.7382037006711578
+          },
+          {
+            "senseId": "accusation",
+            "score": 0.7143581627577801
+          }
+        ]
+      },
+      "translationMs": 36.93,
+      "totalMs": 52.739,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    },
+    {
+      "id": "abstain-064",
+      "sentence": "Translate the isolated token light.",
+      "selectedText": "light",
+      "start": 29,
+      "end": 34,
+      "expectedExpression": "light",
+      "expectedSense": null,
+      "acceptableTranslationsPtBr": [],
+      "category": "abstain",
+      "expectedAbstention": true,
+      "provenance": "agent-authored-explicit-unvalidated",
+      "split": "test",
+      "sentenceOriginal": "Translate the isolated token light.",
+      "sentenceTranslated": "Traduza a luz de token isolada.",
+      "originalSpan": [
+        29,
+        34
+      ],
+      "detectedExpression": "light",
+      "expressionSpan": [
+        29,
+        34
+      ],
+      "tokenSpans": [
+        [
+          29,
+          34
+        ]
+      ],
+      "candidateTranslations": [
+        {
+          "senseId": "illumination",
+          "translations": [
+            "luz"
+          ]
+        },
+        {
+          "senseId": "lightweight",
+          "translations": [
+            "leve",
+            "leve em recursos"
+          ]
+        }
+      ],
+      "A": {
+        "mode": "A",
+        "status": "Correspondência lexical",
+        "shortTranslation": "luz",
+        "senseId": "illumination",
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Tradução localizada na frase; evidência lexical, não alinhamento garantido"
+        ],
+        "decisionMs": 0.144,
+        "ranking": []
+      },
+      "B": {
+        "mode": "B",
+        "status": "Resultado experimental",
+        "shortTranslation": "luz",
+        "senseId": "illumination",
+        "semanticScore": 0.7350971735461723,
+        "confidence": null,
+        "meaningResolved": true,
+        "alignmentResolved": true,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "Candidato localizado na frase traduzida"
+        ],
+        "decisionMs": 39.956,
+        "ranking": [
+          {
+            "senseId": "illumination",
+            "score": 0.7350971735461723
+          },
+          {
+            "senseId": "lightweight",
+            "score": 0.730142660200418
+          }
+        ]
+      },
+      "translationMs": 45.875,
+      "totalMs": 86.161,
+      "cacheHit": false,
+      "correctA": false,
+      "correctB": false,
+      "expressionCorrect": true
+    }
+  ],
+  "reportStatus": "historical adapter; unvalidated offline flag"
+}

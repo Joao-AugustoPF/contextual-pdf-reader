@@ -1,0 +1,31 @@
+{
+  "platform": "windows",
+  "selectedWord": "programming",
+  "machineSuggestion": "Programação",
+  "finalTranslation": "programação revisada",
+  "savedBeforeReview": false,
+  "cancelPreservedEmptyAnnotations": true,
+  "manualOverride": true,
+  "suggestionEvidence": {
+    "basis": "isolated-translation",
+    "original": "programming",
+    "translation": "Programação",
+    "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+    "elapsedMs": 244.861,
+    "contextVerified": false,
+    "alignmentResolved": false,
+    "requiresReview": true,
+    "userReviewed": true
+  },
+  "runtimeStatus": {
+    "translatorReady": true,
+    "minilmReady": true,
+    "encoderCalls": 0,
+    "translationCalls": 2,
+    "onnxImported": false,
+    "rssBytes": 147181568,
+    "peakWorkingSetBytes": 176160768,
+    "elapsedMs": 13.453100000333507
+  },
+  "userDatabaseUsed": false
+}

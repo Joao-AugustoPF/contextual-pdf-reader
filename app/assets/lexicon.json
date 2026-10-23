@@ -1,0 +1,675 @@
+{
+  "light": [
+    {
+      "senseId": "illumination",
+      "translations": [
+        "luz"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The light from the lamp filled the bedroom.",
+          "start": 4,
+          "end": 9
+        }
+      ]
+    },
+    {
+      "senseId": "lightweight",
+      "translations": [
+        "leve",
+        "leve em recursos"
+      ],
+      "prototypes": [
+        {
+          "sentence": "A light backpack is easy to carry.",
+          "start": 2,
+          "end": 7
+        }
+      ]
+    }
+  ],
+  "bank": [
+    {
+      "senseId": "financial",
+      "translations": [
+        "banco"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The bank approved our mortgage application.",
+          "start": 4,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "senseId": "river_edge",
+      "translations": [
+        "margem",
+        "beira"
+      ],
+      "prototypes": [
+        {
+          "sentence": "We walked along the muddy bank of the stream.",
+          "start": 26,
+          "end": 30
+        }
+      ]
+    }
+  ],
+  "charge": [
+    {
+      "senseId": "fee",
+      "translations": [
+        "cobrança",
+        "taxa",
+        "cobrar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "There is a service charge on the bill.",
+          "start": 19,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "senseId": "electricity",
+      "translations": [
+        "carga",
+        "carregar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The battery has enough charge for an hour.",
+          "start": 23,
+          "end": 29
+        }
+      ]
+    },
+    {
+      "senseId": "accusation",
+      "translations": [
+        "acusação",
+        "acusar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The criminal charge was dismissed in court.",
+          "start": 13,
+          "end": 19
+        }
+      ]
+    }
+  ],
+  "run": [
+    {
+      "senseId": "execute",
+      "translations": [
+        "executar",
+        "rodar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "Please run the script in the terminal.",
+          "start": 7,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "senseId": "jog",
+      "translations": [
+        "correr",
+        "corrida"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The athletes run around the stadium.",
+          "start": 13,
+          "end": 16
+        }
+      ]
+    }
+  ],
+  "give up": [
+    {
+      "senseId": "stop",
+      "translations": [
+        "desistir",
+        "abandonar",
+        "desistiu",
+        "desisti"
+      ],
+      "prototypes": [
+        {
+          "sentence": "Do not give up learning the violin.",
+          "start": 7,
+          "end": 14
+        }
+      ]
+    }
+  ],
+  "give in": [
+    {
+      "senseId": "yield",
+      "translations": [
+        "ceder",
+        "cedeu",
+        "render"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The negotiator refused to give in to pressure.",
+          "start": 26,
+          "end": 33
+        }
+      ]
+    }
+  ],
+  "give away": [
+    {
+      "senseId": "donate",
+      "translations": [
+        "doar",
+        "distribuir",
+        "dar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "They will give away old clothes to charity.",
+          "start": 10,
+          "end": 19
+        }
+      ]
+    }
+  ],
+  "look up": [
+    {
+      "senseId": "search",
+      "translations": [
+        "pesquisar",
+        "consultar",
+        "procurar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "You can look up the address in the directory.",
+          "start": 8,
+          "end": 15
+        }
+      ]
+    }
+  ],
+  "look after": [
+    {
+      "senseId": "care",
+      "translations": [
+        "cuidar",
+        "cuidar de"
+      ],
+      "prototypes": [
+        {
+          "sentence": "Nurses look after patients in the hospital.",
+          "start": 7,
+          "end": 17
+        }
+      ]
+    }
+  ],
+  "turn down": [
+    {
+      "senseId": "reject",
+      "translations": [
+        "recusar",
+        "rejeitar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "He might turn down the invitation to dinner.",
+          "start": 9,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "senseId": "reduce",
+      "translations": [
+        "diminuir",
+        "abaixar",
+        "reduzir"
+      ],
+      "prototypes": [
+        {
+          "sentence": "Please turn down the loud radio.",
+          "start": 7,
+          "end": 16
+        }
+      ]
+    }
+  ],
+  "set up": [
+    {
+      "senseId": "establish",
+      "translations": [
+        "configurar",
+        "montar",
+        "criar",
+        "instalar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "We need to set up a new database server.",
+          "start": 11,
+          "end": 17
+        }
+      ]
+    }
+  ],
+  "carry on": [
+    {
+      "senseId": "continue",
+      "translations": [
+        "continuar",
+        "prosseguir"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The musicians carry on playing despite the rain.",
+          "start": 14,
+          "end": 22
+        }
+      ]
+    }
+  ],
+  "run into": [
+    {
+      "senseId": "encounter",
+      "translations": [
+        "encontrar",
+        "encontrei",
+        "esbarrar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "I sometimes run into an old neighbor at the market.",
+          "start": 12,
+          "end": 20
+        }
+      ]
+    }
+  ],
+  "thread": [
+    {
+      "senseId": "computing",
+      "translations": [
+        "thread",
+        "linha de execução"
+      ],
+      "prototypes": [
+        {
+          "sentence": "A worker thread processes tasks in parallel.",
+          "start": 9,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "senseId": "fiber",
+      "translations": [
+        "fio",
+        "linha"
+      ],
+      "prototypes": [
+        {
+          "sentence": "Pass the thread through the sewing needle.",
+          "start": 9,
+          "end": 15
+        }
+      ]
+    }
+  ],
+  "framework": [
+    {
+      "senseId": "software",
+      "translations": [
+        "framework",
+        "estrutura"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The web framework provides routing and templates.",
+          "start": 8,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "senseId": "structure",
+      "translations": [
+        "estrutura",
+        "arcabouço"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The steel framework supports the roof.",
+          "start": 10,
+          "end": 19
+        }
+      ]
+    }
+  ],
+  "race condition": [
+    {
+      "senseId": "concurrency",
+      "translations": [
+        "condição de corrida",
+        "condição de disputa"
+      ],
+      "prototypes": [
+        {
+          "sentence": "Two concurrent writes can cause a race condition.",
+          "start": 34,
+          "end": 48
+        }
+      ]
+    }
+  ],
+  "lock": [
+    {
+      "senseId": "mutex",
+      "translations": [
+        "bloqueio",
+        "trava",
+        "mutex"
+      ],
+      "prototypes": [
+        {
+          "sentence": "Acquire the lock before modifying shared memory.",
+          "start": 12,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "senseId": "door",
+      "translations": [
+        "fechadura",
+        "tranca"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The key will not fit the rusty lock.",
+          "start": 31,
+          "end": 35
+        }
+      ]
+    }
+  ],
+  "deploy": [
+    {
+      "senseId": "publish",
+      "translations": [
+        "implantar",
+        "publicar",
+        "implante",
+        "implementar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "We deploy the website to production every Friday.",
+          "start": 3,
+          "end": 9
+        }
+      ]
+    }
+  ],
+  "build": [
+    {
+      "senseId": "software",
+      "translations": [
+        "compilação",
+        "compilar",
+        "construir"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The nightly build failed because of a syntax error.",
+          "start": 12,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "senseId": "construct",
+      "translations": [
+        "construir",
+        "construção"
+      ],
+      "prototypes": [
+        {
+          "sentence": "They build wooden houses in this village.",
+          "start": 5,
+          "end": 10
+        }
+      ]
+    }
+  ],
+  "branch": [
+    {
+      "senseId": "git",
+      "translations": [
+        "ramificação",
+        "branch",
+        "ramo"
+      ],
+      "prototypes": [
+        {
+          "sentence": "Merge the feature branch into the main repository.",
+          "start": 18,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "senseId": "tree",
+      "translations": [
+        "galho",
+        "ramo"
+      ],
+      "prototypes": [
+        {
+          "sentence": "A bird landed on the highest branch.",
+          "start": 29,
+          "end": 35
+        }
+      ]
+    }
+  ],
+  "release": [
+    {
+      "senseId": "version",
+      "translations": [
+        "versão",
+        "lançamento",
+        "lançar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "This software release includes security patches.",
+          "start": 14,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "senseId": "free",
+      "translations": [
+        "libertar",
+        "soltar",
+        "liberação"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The shelter will release the recovered eagle.",
+          "start": 17,
+          "end": 24
+        }
+      ]
+    }
+  ],
+  "state": [
+    {
+      "senseId": "condition",
+      "translations": [
+        "estado"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The application state is persisted to disk.",
+          "start": 16,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "senseId": "territory",
+      "translations": [
+        "estado"
+      ],
+      "prototypes": [
+        {
+          "sentence": "California is a large state on the Pacific coast.",
+          "start": 22,
+          "end": 27
+        }
+      ]
+    }
+  ],
+  "on the fly": [
+    {
+      "senseId": "dynamic",
+      "translations": [
+        "dinamicamente",
+        "em tempo real",
+        "na hora"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The compiler optimizes code on the fly.",
+          "start": 28,
+          "end": 38
+        }
+      ]
+    }
+  ],
+  "out of the box": [
+    {
+      "senseId": "ready",
+      "translations": [
+        "pronto para uso",
+        "por padrão",
+        "de fábrica"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The printer works out of the box without configuration.",
+          "start": 18,
+          "end": 32
+        }
+      ]
+    }
+  ],
+  "at stake": [
+    {
+      "senseId": "risk",
+      "translations": [
+        "em jogo",
+        "em risco"
+      ],
+      "prototypes": [
+        {
+          "sentence": "Our reputation is at stake in this negotiation.",
+          "start": 18,
+          "end": 26
+        }
+      ]
+    }
+  ],
+  "by and large": [
+    {
+      "senseId": "generally",
+      "translations": [
+        "em geral",
+        "de modo geral"
+      ],
+      "prototypes": [
+        {
+          "sentence": "By and large, the experiment was successful.",
+          "start": 0,
+          "end": 12
+        }
+      ]
+    }
+  ],
+  "laissez-faire": [
+    {
+      "senseId": "nonintervention",
+      "translations": [
+        "laissez-faire",
+        "não intervenção"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The minister favors a laissez-faire economic policy.",
+          "start": 22,
+          "end": 35
+        }
+      ]
+    }
+  ],
+  "give": [
+    {
+      "senseId": "handover",
+      "translations": [
+        "dar",
+        "entregar"
+      ],
+      "prototypes": [
+        {
+          "sentence": "Please give the book to your sister.",
+          "start": 7,
+          "end": 11
+        }
+      ]
+    }
+  ],
+  "bat": [
+    {
+      "senseId": "animal",
+      "translations": [
+        "morcego"
+      ],
+      "prototypes": [
+        {
+          "sentence": "A bat flew out of the cave at dusk.",
+          "start": 2,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "senseId": "sport",
+      "translations": [
+        "taco"
+      ],
+      "prototypes": [
+        {
+          "sentence": "The baseball player swung his bat.",
+          "start": 30,
+          "end": 33
+        }
+      ]
+    }
+  ]
+}

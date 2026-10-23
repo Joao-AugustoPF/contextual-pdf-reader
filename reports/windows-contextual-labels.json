@@ -1,0 +1,271 @@
+{
+  "cases": [
+    {
+      "id": "software_nest",
+      "word": "nest",
+      "sentence": "Because components often nest within one another, each component in the domain-partitioned architecture shown in Figure 9-3 (for example, CatalogCheckout) may use a persistence library and have a separate layer for business rules, but the top-level partitioning will still revolve around domains.",
+      "sentenceTranslated": "Porque os componentes geralmente se aninham entre si, cada componente da arquitetura particionada por domínio mostrado na Figura 9-3 (por exemplo, CatalogCheckout) pode usar uma biblioteca de persistência e ter uma camada separada para regras de negócios, mas o particionamento de nível superior ainda gira em torno de domínios.",
+      "isolatedTranslationBefore": "ninho",
+      "suggestionAfter": {
+        "basis": "contextual-prefix-alignment",
+        "original": "nest",
+        "translation": "aninham",
+        "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+        "elapsedMs": 148.861,
+        "contextVerified": false,
+        "alignmentResolved": true,
+        "alignmentEvidence": {
+          "method": "prefix",
+          "withoutTargetTranslation": "Porque componentes muitas vezes",
+          "withTargetTranslation": "Porque componentes muitas vezes aninham",
+          "sentenceTranslatedSpan": [
+            36,
+            43
+          ]
+        },
+        "requiresReview": true
+      },
+      "B": {
+        "mode": "B",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "A seleção está fora do léxico de sentidos desta versão",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 5088.875,
+        "ranking": []
+      }
+    },
+    {
+      "id": "software_revolve",
+      "word": "revolve",
+      "sentence": "Because components often nest within one another, each component in the domain-partitioned architecture shown in Figure 9-3 (for example, CatalogCheckout) may use a persistence library and have a separate layer for business rules, but the top-level partitioning will still revolve around domains.",
+      "sentenceTranslated": "Porque os componentes geralmente se aninham entre si, cada componente da arquitetura particionada por domínio mostrado na Figura 9-3 (por exemplo, CatalogCheckout) pode usar uma biblioteca de persistência e ter uma camada separada para regras de negócios, mas o particionamento de nível superior ainda gira em torno de domínios.",
+      "isolatedTranslationBefore": "Revolver",
+      "suggestionAfter": {
+        "basis": "contextual-omission-alignment",
+        "original": "revolve",
+        "translation": "gira",
+        "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+        "elapsedMs": 1633.623,
+        "contextVerified": false,
+        "alignmentResolved": true,
+        "alignmentEvidence": {
+          "method": "omission",
+          "withoutTargetTranslation": "Mas o particionamento de nível superior ainda vai em torno de domínios.",
+          "withTargetTranslation": "Mas a partição de nível superior ainda gira em torno de domínios.",
+          "sentenceTranslatedSpan": [
+            302,
+            306
+          ]
+        },
+        "requiresReview": true
+      },
+      "B": {
+        "mode": "B",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "A seleção está fora do léxico de sentidos desta versão",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 42.232,
+        "ranking": []
+      }
+    },
+    {
+      "id": "noun_nest",
+      "word": "nest",
+      "sentence": "The bird built a nest in the tree.",
+      "sentenceTranslated": "O pássaro construiu um ninho na árvore.",
+      "isolatedTranslationBefore": "ninho",
+      "suggestionAfter": {
+        "basis": "contextual-prefix-alignment",
+        "original": "nest",
+        "translation": "ninho",
+        "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+        "elapsedMs": 127.253,
+        "contextVerified": false,
+        "alignmentResolved": true,
+        "alignmentEvidence": {
+          "method": "prefix",
+          "withoutTargetTranslation": "O pássaro construiu um",
+          "withTargetTranslation": "O pássaro construiu um ninho",
+          "sentenceTranslatedSpan": [
+            23,
+            28
+          ]
+        },
+        "requiresReview": true
+      },
+      "B": {
+        "mode": "B",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "A seleção está fora do léxico de sentidos desta versão",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 44.267,
+        "ranking": []
+      }
+    },
+    {
+      "id": "birds_nest",
+      "word": "nest",
+      "sentence": "The birds nest in the tree.",
+      "sentenceTranslated": "Os pássaros se aninham na árvore.",
+      "isolatedTranslationBefore": "ninho",
+      "suggestionAfter": {
+        "basis": "contextual-omission-alignment",
+        "original": "nest",
+        "translation": "se aninham",
+        "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+        "elapsedMs": 169.545,
+        "contextVerified": false,
+        "alignmentResolved": true,
+        "alignmentEvidence": {
+          "method": "omission",
+          "withoutTargetTranslation": "Os pássaros na árvore.",
+          "withTargetTranslation": "Os pássaros se aninham na árvore.",
+          "sentenceTranslatedSpan": [
+            12,
+            22
+          ]
+        },
+        "requiresReview": true
+      },
+      "B": {
+        "mode": "B",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "A seleção está fora do léxico de sentidos desta versão",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 34.137,
+        "ranking": []
+      }
+    },
+    {
+      "id": "components_nest",
+      "word": "nest",
+      "sentence": "These components nest within one another.",
+      "sentenceTranslated": "Estes componentes se aninham uns nos outros.",
+      "isolatedTranslationBefore": "ninho",
+      "suggestionAfter": {
+        "basis": "contextual-prefix-clause-alignment",
+        "original": "nest",
+        "translation": "se aninham",
+        "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+        "elapsedMs": 302.433,
+        "contextVerified": false,
+        "alignmentResolved": true,
+        "alignmentEvidence": {
+          "method": "prefix-clause",
+          "withoutTargetTranslation": "Esses componentes.",
+          "withTargetTranslation": "Esses componentes se aninham.",
+          "sentenceTranslatedSpan": [
+            18,
+            28
+          ]
+        },
+        "requiresReview": true
+      },
+      "B": {
+        "mode": "B",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "A seleção está fora do léxico de sentidos desta versão",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 42.264,
+        "ranking": []
+      }
+    },
+    {
+      "id": "rippling",
+      "word": "rippling",
+      "sentence": "Because everything is coupled to everything else, changes tend to have hard-to-predict rippling side effects.",
+      "sentenceTranslated": "Porque tudo está ligado ao resto, mudanças tendem a ter efeitos colaterais difíceis de prever.",
+      "isolatedTranslationBefore": "Ondulação",
+      "suggestionAfter": {
+        "basis": "isolated-translation",
+        "original": "rippling",
+        "translation": "Ondulação",
+        "engineId": "ctranslate2-argos-en_pb-1.9-int8",
+        "elapsedMs": 1270.973,
+        "contextVerified": false,
+        "alignmentResolved": false,
+        "requiresReview": true
+      },
+      "B": {
+        "mode": "B",
+        "status": "Inconclusivo",
+        "shortTranslation": null,
+        "senseId": null,
+        "semanticScore": null,
+        "confidence": null,
+        "meaningResolved": false,
+        "alignmentResolved": false,
+        "alignmentEvidence": [
+          "Pooling do span alvo; protótipos contextualizados",
+          "Score semântico não calibrado; não é probabilidade",
+          "A seleção está fora do léxico de sentidos desta versão",
+          "Sem âncora segura na tradução"
+        ],
+        "decisionMs": 44.355,
+        "ranking": []
+      }
+    }
+  ],
+  "runtimeStatus": {
+    "translatorReady": true,
+    "minilmReady": true,
+    "encoderCalls": 6,
+    "translationCalls": 36,
+    "onnxImported": true,
+    "rssBytes": 231030784,
+    "peakWorkingSetBytes": 240287744,
+    "elapsedMs": 0.5425999988801777
+  },
+  "evaluationGoldUsed": false,
+  "remoteInferenceUsed": false
+}

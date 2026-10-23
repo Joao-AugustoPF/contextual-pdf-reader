@@ -1,0 +1,10 @@
+{
+  "pages": 1001,
+  "annotations": 50,
+  "openAndOneSecondRenderMs": 2695.829,
+  "rssBefore": 481857536,
+  "rssZeroAnnotations": 523587584,
+  "rssFiftyAnnotations": 526823424,
+  "textlessPageDetected": true,
+  "device": "Android emulator x86_64 debug; não físico; não teste de livro real"
+}
