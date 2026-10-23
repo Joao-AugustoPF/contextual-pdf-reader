@@ -197,4 +197,8 @@ Limites: heurística de leitura não equivale a desambiguação garantida; casos
 - [x] Reforçar exclusões de bancos, credenciais, modelos e artefatos compilados; preservar fontes, manifests, locks, licença e evidências de teste.
 - [x] Adicionar GitHub Actions para análise e testes Dart compartilhados, com ações fixadas por SHA. Build/assinatura iOS continuam nos fluxos manuais Codemagic.
 - [x] Reexecutar localmente 56 testes compartilhados e cinco testes Python com modelos reais; análise estática sem problemas. Sem novo download de modelos.
-- [ ] Conferir arquivos públicos, publicar na conta autorizada e verificar conteúdo remoto e CI.
+- [x] Auditar 287 arquivos preparados (aproximadamente 5,36 MB): nenhum arquivo proibido/credencial detectado; links da documentação e YAML conferidos. Não incluir modelos, executáveis, banco ou documentos pessoais.
+- [x] Publicar `Joao-AugustoPF/contextual-pdf-reader` como público, com branch `main`, descrição, tópicos e licença MIT reconhecida pelo GitHub. Conferir árvore remota e SHA do commit enviado.
+- [x] GitHub Actions aprovado em Linux: análise estática e 55 testes compartilhados em 1 min 8 s. O teste adicional de bloqueio exclusivo é específico do Windows, onde os 56 passaram localmente. [Execução remota](https://github.com/Joao-AugustoPF/contextual-pdf-reader/actions/runs/40036628998).
+
+Publicação dos fontes concluída. Compilação iOS, assinatura e ensaios físicos permanecem nas pendências de plataforma já documentadas; publicar o repositório não executa os workflows Codemagic.

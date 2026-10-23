@@ -6,6 +6,10 @@ README atualizado com instruções para clone limpo, recursos atuais, captura si
 
 Verificação local repetida: **56 testes Dart passaram**, `flutter analyze --no-pub` sem problemas (103,3 s com concorrência de ferramentas), **cinco testes Python passaram em 7,90 s**, incluindo o processo PyInstaller e modelos reais já instalados. Nenhum download de modelos, ensaio iOS ou nova medição A/B foi feito nesta etapa. Os resultados abaixo preservam seu contexto histórico; versões anteriores do plano/relatórios descrevem o estado daquele momento.
 
+Publicado o [repositório público](https://github.com/Joao-AugustoPF/contextual-pdf-reader), com 287 arquivos no primeiro commit e licença MIT reconhecida pelo GitHub. Auditoria dos arquivos preparados sem credenciais detectadas, modelos instalados, executáveis ou bancos; links da documentação conferidos. Uma referência ao diretório de perfil no relatório histórico do runtime foi representada por `%APPDATA%`, preservando as medições.
+
+O [primeiro GitHub Actions](https://github.com/Joao-AugustoPF/contextual-pdf-reader/actions/runs/40036628998) passou em **1 min 8 s**: análise estática sem problemas e **55 testes compartilhados aprovados no Linux**. A diferença para os 56 do Windows é o teste de arquivo bloqueado, condicionado a `Platform.isWindows`. O CI não baixa modelos nem compila iOS, Android ou a interface Windows. Os fluxos Codemagic continuam sem execução.
+
 ## Ambiente e verificações
 
 Windows 11, Flutter 3.47.7, Dart 3.13.5, Python 3.12.10, CPU (duas threads para inferência), SDK Android com AVD Pixel_Android16 x86_64. Sem dispositivo físico e sem Visual Studio C++. Não foram medidos resultados iOS/macOS/Linux.
